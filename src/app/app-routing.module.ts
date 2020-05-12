@@ -4,13 +4,18 @@ import { GenericWelcomeComponent } from './components/generic-welcome/generic-we
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { MaterialIconsComponent } from './components/material-icons/material-icons.component';
 import { CovidIconsComponent } from './components/covid-icons/covid-icons.component';
+import { FeatherIconsComponent } from './components/feather-icons/feather-icons.component';
 
 
 const routes: Routes = [
   {
     path: '',
-    component: WelcomeComponent
+    component: CovidIconsComponent
   },
+  // {
+  //   path: '',
+  //   component: WelcomeComponent
+  // },
   {
     path: 'gen-wel',
     component: GenericWelcomeComponent
@@ -22,6 +27,10 @@ const routes: Routes = [
   {
     path: 'covid',
     component: CovidIconsComponent
+  },
+  {
+    path: 'feather',
+    component: FeatherIconsComponent
   }
 ];
 

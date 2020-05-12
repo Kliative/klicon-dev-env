@@ -11,6 +11,8 @@ import { MaterialIconsComponent } from './components/material-icons/material-ico
 import { MiFormComponent } from './components/material-icons/mi-form/mi-form.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CovidIconsComponent } from './components/covid-icons/covid-icons.component';
+import { FeatherIconsComponent } from './components/feather-icons/feather-icons.component';
+import { FeatherWeatherIconsComponent } from './components/feather-icons/feather-weather-icons/feather-weather-icons.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { CovidIconsComponent } from './components/covid-icons/covid-icons.compon
     WelcomeComponent,
     MaterialIconsComponent,
     MiFormComponent,
-    CovidIconsComponent
+    CovidIconsComponent,
+    FeatherIconsComponent,
+    FeatherWeatherIconsComponent
   ],
   imports: [
     BrowserModule,
