@@ -12,10 +12,7 @@ export class MiFormComponent implements OnInit {
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
     iconRegistry.addSvgIcon(
       'thumbs-up',
-      sanitizer.bypassSecurityTrustResourceUrl('assets/icons/ic_apps_48px.svg'));
-    iconRegistry.addSvgIcon(
-      'arrow-up',
-      sanitizer.bypassSecurityTrustResourceUrl('assets/icons/ic_arrow_upward_48px.svg'));
+      sanitizer.bypassSecurityTrustResourceUrl('assets/icons/material/thumbs-up-line.svg'));
   }
 
   ngOnInit() {

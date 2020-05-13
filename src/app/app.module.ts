@@ -13,6 +13,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { CovidIconsComponent } from './components/covid-icons/covid-icons.component';
 import { FeatherIconsComponent } from './components/feather-icons/feather-icons.component';
 import { FeatherWeatherIconsComponent } from './components/feather-icons/feather-weather-icons/feather-weather-icons.component';
+import { EditComponent } from './components/material-icons/edit/edit.component';
+import { ThumbsUpComponent } from './components/material-icons/thumbs-up/thumbs-up.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { FeatherWeatherIconsComponent } from './components/feather-icons/feather
     MiFormComponent,
     CovidIconsComponent,
     FeatherIconsComponent,
-    FeatherWeatherIconsComponent
+    FeatherWeatherIconsComponent,
+    EditComponent,
+    ThumbsUpComponent
   ],
   imports: [
     BrowserModule,

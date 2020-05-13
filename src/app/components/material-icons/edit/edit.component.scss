@@ -1,0 +1,98 @@
+// Edit
+#edit { 
+    overflow: visible;
+}
+
+// #edit:hover {
+//     #pen {
+//         animation: pen-draw;
+//         animation-delay: 0.25s;
+//         animation-duration: 2s;
+//     }
+    
+//     #line {
+    
+//         animation: line-ani;
+//         animation-delay: 1.14s;
+//         animation-duration: .8s;
+//     }
+// }
+#pen {
+    animation: pen-draw;
+    animation-delay: 0.25s;
+    animation-duration: 2s;
+}
+
+#line {
+
+    animation: line-ani;
+    animation-delay: 1.14s;
+    animation-duration: .8s;
+// }
+//     #line {
+    stroke-dasharray: 102px;
+    stroke-dashoffset: 100px;
+    stroke-width: 0;
+    transform: scaleX(-1) translateX(-100px);
+}
+
+#pen,
+#line {
+    animation-iteration-count: 5;
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+@keyframes line-ani {
+    0% {
+        stroke-dasharray: 100px;
+        stroke-width: 0;
+    }
+
+    90% {
+        stroke-dasharray: 200px;
+        stroke-width: 8;
+    }
+    100% {
+        stroke-dasharray: 250px;
+    }
+}
+
+@keyframes pen-draw {
+    15% {
+        transform: translateY(15px) rotate(-60deg);
+    }
+
+    20% {
+        transform: translateX(15px) translateY(50px) rotate(-60deg);
+    }
+    // 30% {
+    //     transform: translateY(5px) rotate(-52deg);
+    // }
+
+    40% {
+   
+        transform: translateX(15px) translateY(45px) rotate(-60deg);
+    }
+
+//       70% {
+//     transform: translateX(-0px) translateY(0px) rotate(0deg);
+// }
+
+//     80% {
+//         transform: translateX(0px)  translateY(10px)  rotate(0deg);
+//     }
+
+
+//     90% {
+//         transform: translateX(0px)  translateY(10px)  rotate(0deg);
+//     }
+
+    55% {
+        transform: translateX(0px)  translateY(0px)  rotate(0deg);
+    }
+
+  
+}
