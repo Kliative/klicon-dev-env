@@ -1,5 +1,4 @@
-<!-- Thumbs Up -->
-<svg id="thumbs-up" width="148" height="134" viewBox="0 0 148 134" fill="none" 
+<svg width="148" height="134" viewBox="0 0 148 134" fill="none" 
     xmlns="http://www.w3.org/2000/svg">
     <path id="hand" d="M131 48.3333H91.0367L97.0533 19.5804L97.2433 17.567C97.2433 14.9875 96.1667 12.5966 94.4567 10.8979L87.7433 4.29163L46.07 45.7537C43.7267 48.0187 42.3333 51.1645 42.3333 54.625V117.542C42.3333 124.462 48.0333 130.125 55 130.125H112C117.257 130.125 121.753 126.979 123.653 122.449L142.78 78.0929C143.35 76.6458 143.667 75.1358 143.667 73.5V60.9166C143.667 53.9958 137.967 48.3333 131 48.3333Z" stroke="black" stroke-width="7" stroke-linejoin="round"/>
     <path id="sleeve" d="M4.33334 54.625H29.6667V130.125H4.33334V54.625Z" stroke="black" stroke-width="7" stroke-linejoin="round"/>
