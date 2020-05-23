@@ -3,31 +3,97 @@
     <div class="col">
       <h1>Material Icons</h1>
       <hr>
-
     </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <ani-mat-clock></ani-mat-clock>
+    </div>
+  </div>
+  <hr>
+  <h4>done - ish</h4>
+  <div class="row">
+    <div class="example-action-buttons">
+      <button mat-button (click)="accordion.openAll()">Expand</button>
+      <button mat-button (click)="accordion.closeAll()">Collapse</button>
+    </div>
+  </div>
+  <div class="row">
+    <mat-accordion class="example-headers-align" multi>
+      <!-- edit -->
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <mat-icon>edit</mat-icon>
+          </mat-panel-title>
+          <mat-panel-description>
+            Edit
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <ani-mat-edit></ani-mat-edit>
+            </div>
+          </div>
+        </div>
+
+      </mat-expansion-panel>
+
+      <!-- Thumb up -->
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <mat-icon>thumb_up</mat-icon>
+          </mat-panel-title>
+          <mat-panel-description>
+            Thumb up
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <manicon-thumbs-up></manicon-thumbs-up>
+            </div>
+          </div>
+        </div>
+
+      </mat-expansion-panel>
+
+      <!-- clock -->
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <mat-icon>alarm</mat-icon>
+          </mat-panel-title>
+          <mat-panel-description>
+            Clock aka alarm
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <ani-mat-clock></ani-mat-clock>
+            </div>
+          </div>
+        </div>
+
+      </mat-expansion-panel>
+
+    </mat-accordion>
   </div>
   <!-- Edit -->
+
+  <hr>
+
   <div class="container">
     <div class="row">
       <div class="col">
-        <ani-mat-edit></ani-mat-edit>
+
       </div>
     </div>
   </div>
-  <hr>
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <manicon-thumbs-up></manicon-thumbs-up>
-      </div>
-    </div>
-  </div>  
-  <hr>
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <ani-mat-clock></ani-mat-clock>
-      </div>
-    </div>
-  </div>  
 </div>

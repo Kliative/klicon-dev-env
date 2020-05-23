@@ -1,0 +1,77 @@
+svg {
+    overflow: visible;
+
+    &:hover {
+        #bell-right,#bell-left {
+            animation-name: bell-shake;
+        }
+
+        #minute-hand {
+            animation-name: rotate-hand;
+        }
+    }
+}
+
+#bell-right,
+#bell-left {
+    // animation-name: bell-shake;
+    transform-origin: 49% 57%;
+    animation-duration: .3s;
+    animation-delay: .3s;
+}
+
+#minute-hand {
+    // animation-name: rotate-hand;
+    transform-origin: 49% 57%;
+    animation-duration: .5s;
+    animation-delay: 0s;
+}
+
+#bell-right,
+#bell-left,
+#minute-hand {
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+
+@keyframes rotate-hand {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+
+}
+
+@keyframes bell-shake {
+    0% {
+        transform: rotate(0turn);
+    }
+
+    20% {
+        transform: rotate(0.02turn);
+    }
+
+    40% {
+        transform: rotate(-0.02turn);
+    }
+
+    60% {
+        transform: rotate(0.02turn);
+    }
+
+    80% {
+        transform: rotate(-0.02turn);
+    }
+
+    100% {
+        transform: rotate(0turn);
+    }
+
+}
