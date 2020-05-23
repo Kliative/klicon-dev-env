@@ -1,0 +1,56 @@
+svg {
+    overflow: visible;
+
+    &:hover {
+        #wrench {
+            animation-name: rotate-wrench;
+        }
+    }
+}
+
+#wrench {
+    // animation-name: rotate-wrench;
+    transform-origin: 5% 5%;
+    animation-duration: 1s;
+    animation-delay: .3s;
+}
+
+
+#wrench {
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+
+
+
+@keyframes rotate-wrench {
+    0% {
+        transform: rotate(0turn);
+    }
+
+    20% {
+        transform: rotate(-75deg);
+    }
+  
+
+    51% {
+        transform: rotate(-27deg);
+    }
+    53% {
+        transform: rotate(-30deg);
+    }
+  
+  
+    97%{
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+
+
+}

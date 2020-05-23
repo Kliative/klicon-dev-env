@@ -16,6 +16,7 @@ import { FeatherWeatherIconsComponent } from './components/feather-icons/feather
 import { EditComponent } from './components/material-icons/edit/edit.component';
 import { ThumbsUpComponent } from './components/material-icons/thumbs-up/thumbs-up.component';
 import { ClockComponent } from './components/material-icons/clock/clock.component';
+import { AnimatWrenchComponent } from './components/material-icons/animat-wrench/animat-wrench.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ClockComponent } from './components/material-icons/clock/clock.componen
     FeatherWeatherIconsComponent,
     EditComponent,
     ThumbsUpComponent,
-    ClockComponent
+    ClockComponent,
+    AnimatWrenchComponent
   ],
   imports: [
     BrowserModule,
