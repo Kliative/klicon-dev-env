@@ -3,23 +3,17 @@
     overflow: visible;
 }
 
-#edit:hover {
+:host:hover {
     #pen {
-        animation: pen-draw;
-        animation-delay: 0.25s;
-        animation-duration: 2s;
+        animation-name: pen-draw;
     }
 
     #line {
-        animation: line-ani;
-        animation-delay: 0s;
-        animation-duration: 2s;
+        animation-name: line-ani;
     }
 
     #line2 {
-        animation: line-ani-2;
-        animation-delay: 0s;
-        animation-duration: 2s;
+        animation-name: line-ani-2;
     }
 }
 
@@ -37,6 +31,8 @@
 #pen,
 #line,
 #line2 {
+    animation-delay: 0s;
+    animation-duration: 2s;
     animation-iteration-count: 1;
     animation-timing-function: ease;
     animation-direction: normal;

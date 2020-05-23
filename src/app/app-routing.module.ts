@@ -10,7 +10,7 @@ import { FeatherIconsComponent } from './components/feather-icons/feather-icons.
 const routes: Routes = [
   {
     path: '',
-    component: CovidIconsComponent
+    component: MaterialIconsComponent
   },
   // {
   //   path: '',
