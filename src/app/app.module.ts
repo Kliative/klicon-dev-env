@@ -17,6 +17,7 @@ import { EditComponent } from './components/material-icons/edit/edit.component';
 import { ThumbsUpComponent } from './components/material-icons/thumbs-up/thumbs-up.component';
 import { ClockComponent } from './components/material-icons/clock/clock.component';
 import { AnimatWrenchComponent } from './components/material-icons/animat-wrench/animat-wrench.component';
+import { AnimatBellComponent } from './components/material-icons/animat-bell/animat-bell.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { AnimatWrenchComponent } from './components/material-icons/animat-wrench
     EditComponent,
     ThumbsUpComponent,
     ClockComponent,
-    AnimatWrenchComponent
+    AnimatWrenchComponent,
+    AnimatBellComponent
   ],
   imports: [
     BrowserModule,
