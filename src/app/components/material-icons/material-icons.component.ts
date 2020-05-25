@@ -7,7 +7,9 @@ import { MatAccordion } from '@angular/material/expansion';
   styleUrls: ['./material-icons.component.scss']
 })
 export class MaterialIconsComponent implements OnInit {
+
   @ViewChild(MatAccordion) accordion: MatAccordion;
+
   constructor() { }
 
   ngOnInit() {
