@@ -19,6 +19,7 @@ import { ClockComponent } from './components/material-icons/clock/clock.componen
 import { AnimatWrenchComponent } from './components/material-icons/animat-wrench/animat-wrench.component';
 import { AnimatBellComponent } from './components/material-icons/animat-bell/animat-bell.component';
 import { AnimatShoppingCartComponent } from './components/material-icons/animat-shopping-cart/animat-shopping-cart.component';
+import { AnimatLockComponent } from './components/material-icons/animat-lock/animat-lock.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { AnimatShoppingCartComponent } from './components/material-icons/animat-
     ClockComponent,
     AnimatWrenchComponent,
     AnimatBellComponent,
-    AnimatShoppingCartComponent
+    AnimatShoppingCartComponent,
+    AnimatLockComponent
   ],
   imports: [
     BrowserModule,
