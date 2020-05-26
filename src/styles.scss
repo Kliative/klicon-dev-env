@@ -40,3 +40,12 @@ $candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-
 .mt-5 {
     margin-top: 5em;
 }
+.klicon-description {
+    position: absolute;
+    color: grey;
+    z-index: 0;
+}
+
+svg {
+    width: 100%;
+}
