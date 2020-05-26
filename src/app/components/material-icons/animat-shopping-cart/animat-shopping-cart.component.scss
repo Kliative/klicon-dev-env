@@ -1,0 +1,166 @@
+svg {
+    overflow: visible;
+
+    &:hover {
+        #cart-full {
+            animation-name: cart-bounce;
+            transform-origin: 0% 46%;
+            animation-duration: 2s;
+            animation-delay: 0s;
+        }
+        
+        #plus {
+            animation-name: rotate-plus;
+            transform-origin: 56% 19.5%;
+            animation-duration: 2s;
+            animation-delay: 0.3s;
+            
+        }
+        
+        #cart-body {
+            animation-name: cart-body-shake;
+            transform-origin: 10% 50%;
+            animation-duration: 1s;
+            animation-delay: .9s;
+        }
+        
+        #cart-fill {
+            animation-name: cart-filling;
+            transform-origin: 50% 55%;
+            animation-duration: 2s;
+            animation-delay: 0s;
+        }
+    }
+}
+
+#cart-fill {
+    transform: scale(0);
+}
+
+#cart-full,
+#plus,
+#cart-fill,
+#cart-body,
+#wheel-front,
+#wheel-back {
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+
+@keyframes cart-filling {
+    0% {
+        transform: scaleY(0) scaleX(0);
+    }
+
+    30% {
+        transform: scaleY(0) scaleX(0);
+    }
+
+    37% {
+        transform: scaleY(.2) scaleX(.45);
+    }
+    50% {
+        transform: rotate(4deg);
+    }
+    88% {
+        transform: scaleY(1) scaleX(1);
+    }
+
+    94% {
+        transform: scaleY(1) scaleX(1);
+    }
+
+    100% {
+        transform: scaleY(0) scaleX(0);
+    }
+
+}
+
+@keyframes cart-body-shake {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+
+    30% {
+        transform: rotate(8deg);
+    }
+
+    40% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(3deg);
+    }
+
+    60% {
+        transform: rotate(0deg);
+    }
+
+}
+
+
+@keyframes rotate-plus {
+    
+    30% {
+        transform: translateX(-10px) translateY(-50px) rotate(180deg);
+    }
+    40% {
+        transform: translateX(0px) translateY(10px) scale(1) rotate(360deg);
+    }
+
+    78% {
+        transform: translateY(25px) scale(.3) rotate(540deg);
+    }
+
+    87% {
+        transform: translateY(50px) scale(0) rotate(540deg);
+    }
+
+    91% {
+        transform: translateY(50px) scale(0) rotate(540deg);
+    }
+
+    95% {
+        transform: translateY(-1px) translateX(-7px) scale(1) rotate(540deg);
+    }
+
+    100% {
+        transform: translateY(-1px) translateX(-7px) scale(1) rotate(540deg);
+    }
+
+}
+
+@keyframes cart-bounce {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(1deg);
+    }
+
+    40% {
+        transform: rotate(-40deg);
+    }
+
+    60% {
+        transform: rotate(0deg);
+    }
+
+    80% {
+        transform: rotate(-3deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+
+}

@@ -1,0 +1,142 @@
+svg {
+    overflow: visible;
+
+    &:hover {
+        #bell {
+            animation-name: rotate-bell;
+        }
+        #knob {
+            animation-name: oscillate-knob;
+        }
+    }
+}
+
+#bell {
+    // animation-name: rotate-bell;
+    transform-origin: 50% 0%;
+    animation-duration: 1s;
+    animation-delay: .3s;
+}
+
+#knob {
+    // animation-name: oscillate-knob;
+    transform-origin: 50% 0%;
+    animation-duration: 1s;
+    animation-delay: .3s;
+}
+
+#bell,
+#knob {
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+@keyframes rotate-bell {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(-45deg);
+    }
+  
+
+    30% {
+        transform: rotate(45deg);
+    }
+    40% {
+        transform: rotate(-45deg);
+    }
+  
+    50% {
+        transform: rotate(45deg);
+    }
+    60% {
+        transform: rotate(-30deg);
+    }
+  
+    65% {
+        transform: rotate(20deg);
+    }
+  
+
+  
+    70% {
+        transform: rotate(-15deg) ;
+    }
+    75% {
+        transform: rotate(10deg) ;
+    }
+    80% {
+        transform: rotate(-15deg) ;
+    }
+    85% {
+        transform: rotate(10deg);
+    }
+    90% {
+        transform: rotate(0deg) ;
+    }
+    95% {
+        transform: rotate(0deg) ;
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes oscillate-knob{
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(-45deg);
+    }
+  
+
+    30% {
+        transform: rotate(45deg);
+    }
+    40% {
+        transform: rotate(-45deg);
+    }
+  
+    50% {
+        transform: rotate(45deg);
+    }
+    60% {
+        transform: rotate(-30deg);
+    }
+  
+    65% {
+        transform: rotate(20deg);
+    }
+  
+
+  
+    70% {
+        transform: rotate(-15deg) translateX(30px);
+    }
+    75% {
+        transform: rotate(10deg) translateX(-30px);
+    }
+    80% {
+        transform: rotate(-15deg) translateX(30px);
+    }
+    85% {
+        transform: rotate(10deg) translateX(-30px);
+    }
+    90% {
+        transform: rotate(0deg) translateX(20px);
+    }
+    95% {
+        transform: rotate(0deg) translateX(-10px);
+    }
+    100% {
+        transform: rotate(0deg) translateX(0px);
+    }
+
+}

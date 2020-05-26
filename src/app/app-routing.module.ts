@@ -8,14 +8,14 @@ import { FeatherIconsComponent } from './components/feather-icons/feather-icons.
 
 
 const routes: Routes = [
-  {
-    path: '',
-    component: MaterialIconsComponent
-  },
   // {
   //   path: '',
-  //   component: WelcomeComponent
+  //   component: MaterialIconsComponent
   // },
+  {
+    path: '',
+    component: WelcomeComponent
+  },
   {
     path: 'gen-wel',
     component: GenericWelcomeComponent
