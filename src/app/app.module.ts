@@ -21,6 +21,7 @@ import { AnimatBellComponent } from './components/material-icons/animat-bell/ani
 import { AnimatShoppingCartComponent } from './components/material-icons/animat-shopping-cart/animat-shopping-cart.component';
 import { AnimatLockComponent } from './components/material-icons/animat-lock/animat-lock.component';
 import { AnimatLanguageGlobeComponent } from './components/material-icons/animat-language-globe/animat-language-globe.component';
+import { AnimatThumbsUpComponent } from './components/material-icons/animat-thumbs-up/animat-thumbs-up.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { AnimatLanguageGlobeComponent } from './components/material-icons/animat
     FeatherWeatherIconsComponent,
     EditComponent,
     ThumbsUpComponent,
+    AnimatThumbsUpComponent,
     ClockComponent,
     AnimatWrenchComponent,
     AnimatBellComponent,
