@@ -20,6 +20,7 @@ import { AnimatWrenchComponent } from './components/material-icons/animat-wrench
 import { AnimatBellComponent } from './components/material-icons/animat-bell/animat-bell.component';
 import { AnimatShoppingCartComponent } from './components/material-icons/animat-shopping-cart/animat-shopping-cart.component';
 import { AnimatLockComponent } from './components/material-icons/animat-lock/animat-lock.component';
+import { AnimatLanguageGlobeComponent } from './components/material-icons/animat-language-globe/animat-language-globe.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { AnimatLockComponent } from './components/material-icons/animat-lock/ani
     AnimatWrenchComponent,
     AnimatBellComponent,
     AnimatShoppingCartComponent,
-    AnimatLockComponent
+    AnimatLockComponent,
+    AnimatLanguageGlobeComponent
   ],
   imports: [
     BrowserModule,
