@@ -1,5 +1,4 @@
 $prime-color: #1e0035;
-$icon-box-background-color: rgba(255, 255, 255, 0.2);
 
 // global
 .icon-wrapper {
@@ -45,53 +44,15 @@ $icon-box-background-color: rgba(255, 255, 255, 0.2);
 
     margin: 5em 0;
 }
-
-.icon-wrapper-r {
-    position: relative;
-    background-color: $prime-color;
-    width: 100px;
-    height: 100px;
-    padding: 20px;
-    border-radius: 50%;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    float: left;
-    margin: 0 auto;
-
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11),
-        0 8px 8px rgba(0, 0, 0, 0.11), 0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);
-
-    svg {
-        width: 100%;
-        height: 100%;
-        overflow: visible;
-
-        path {
-            position: absolute;
-        }
-    }
-}
-
-
-// Rain
-#rain-cloud {
-    animation: cloud-shake;
-    animation-delay: 0.2s;
-}
-
-#first-rain {
-
-    animation: rain-drop;
-    animation-delay: 0.3s;
-}
-
-#second-rain {
-    animation: rain-drop;
-    animation-delay: 0.1s;
-}
-
-#third-rain {
-    animation: rain-drop;
-    animation-delay: 0.4s;
+#first-snow,
+#second-snow,
+#third-snow {
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
 }
 
 // Heavy rain
@@ -101,7 +62,6 @@ $icon-box-background-color: rgba(255, 255, 255, 0.2);
 }
 
 #first-heavy-rain {
-
     animation: heavy-rain-drop;
     animation-delay: 0.3s;
 }
@@ -193,20 +153,6 @@ $icon-box-background-color: rgba(255, 255, 255, 0.2);
     animation-play-state: running;
 }
 
-#rain-cloud,
-#first-rain,
-#second-rain,
-#third-rain,
-#first-snow,
-#second-snow,
-#third-snow {
-    animation-duration: 1.2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
-    animation-play-state: running;
-}
 
 #lightning-cloud,
 #lightning-bolt {
@@ -218,34 +164,7 @@ $icon-box-background-color: rgba(255, 255, 255, 0.2);
     animation-play-state: running;
 }
 
-// Rain
-@keyframes cloud-shake {
-    0% {
-        transform: translate(0px, 0px);
-    }
 
-    25% {
-        transform: translate(0px, 1px);
-    }
-
-    50% {
-        transform: translate(0px, -1px);
-    }
-
-    75% {
-        transform: translate(0px, 1px);
-    }
-
-    100% {
-        transform: translate(0px, 0px);
-    }
-}
-
-@keyframes rain-drop {
-    100% {
-        stroke-dashoffset: -12px;
-    }
-}
 
 //
 @keyframes snow-fall {

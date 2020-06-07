@@ -22,6 +22,7 @@ import { AnimatShoppingCartComponent } from './components/material-icons/animat-
 import { AnimatLockComponent } from './components/material-icons/animat-lock/animat-lock.component';
 import { AnimatLanguageGlobeComponent } from './components/material-icons/animat-language-globe/animat-language-globe.component';
 import { AnimatThumbsUpComponent } from './components/material-icons/animat-thumbs-up/animat-thumbs-up.component';
+import { FeatherRainComponent } from './components/feather-icons/feather-weather-icons/feather-rain/feather-rain.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,9 @@ import { AnimatThumbsUpComponent } from './components/material-icons/animat-thum
     AnimatBellComponent,
     AnimatShoppingCartComponent,
     AnimatLockComponent,
-    AnimatLanguageGlobeComponent
+    AnimatLanguageGlobeComponent,
+
+    FeatherRainComponent
   ],
   imports: [
     BrowserModule,
