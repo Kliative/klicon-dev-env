@@ -4,8 +4,7 @@ $prime-color: #1e0035;
 #first-rain,
 #second-rain,
 #third-rain {
-    stroke-dasharray: 8px;
-    stroke-dashoffset: 8px;
+   
     stroke:currentColor;
 }
 
@@ -66,7 +65,7 @@ $prime-color: #1e0035;
 #second-rain,
 #third-rain {
     animation-duration: 1s;
-    animation-iteration-count: 2;
+    animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     animation-direction: normal;
     animation-fill-mode: forwards;
@@ -102,3 +101,18 @@ $prime-color: #1e0035;
         stroke-dashoffset: -12px;
     }
 }
+
+
+
+:host {
+    display: block;
+  }
+  
+  .open-close-container {
+    border: 1px solid #dddddd;
+    margin-top: 1em;
+    padding: 20px 20px 0px 20px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+  }

@@ -23,6 +23,10 @@ import { AnimatLockComponent } from './components/material-icons/animat-lock/ani
 import { AnimatLanguageGlobeComponent } from './components/material-icons/animat-language-globe/animat-language-globe.component';
 import { AnimatThumbsUpComponent } from './components/material-icons/animat-thumbs-up/animat-thumbs-up.component';
 import { FeatherRainComponent } from './components/feather-icons/feather-weather-icons/feather-rain/feather-rain.component';
+import { AaFRainComponent } from './components/feather-icons/feather-weather-icons/aa-f-rain/aa-f-rain.component';
+// tslint:disable-next-line: max-line-length
+import { FeatherHeavyRainComponent } from './components/feather-icons/feather-weather-icons/feather-heavy-rain/feather-heavy-rain.component';
+import { FeatherSnowComponent } from './components/feather-icons/feather-weather-icons/feather-snow/feather-snow.component';
 
 @NgModule({
   declarations: [
@@ -43,8 +47,10 @@ import { FeatherRainComponent } from './components/feather-icons/feather-weather
     AnimatShoppingCartComponent,
     AnimatLockComponent,
     AnimatLanguageGlobeComponent,
-
-    FeatherRainComponent
+    AaFRainComponent,
+    FeatherRainComponent,
+    FeatherHeavyRainComponent,
+    FeatherSnowComponent
   ],
   imports: [
     BrowserModule,
