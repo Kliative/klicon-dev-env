@@ -7,7 +7,7 @@ svg {
         }
 
         #minute-hand {
-            animation-name: rotate-hand;
+            animation-name: rotate-clock-hand;
         }
     }
 }
@@ -38,7 +38,7 @@ svg {
 }
 
 
-@keyframes rotate-hand {
+@keyframes rotate-clock-hand {
     from {
         transform: rotate(0turn);
     }

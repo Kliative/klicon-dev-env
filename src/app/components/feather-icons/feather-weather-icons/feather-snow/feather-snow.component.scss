@@ -1,0 +1,74 @@
+
+
+#first-snow,
+#second-snow,
+#third-snow {
+    stroke-dasharray: 8px;
+    stroke-dashoffset: 8px;
+}
+.ani-snow-hover {
+    &:hover {
+
+        //Snow
+        #first-snow {
+            animation-name: snow-fall;
+            animation-delay: 0.3s;
+        }
+
+        #second-snow {
+            animation-name: snow-fall;
+            animation-delay: 0.1s;
+        }
+
+        #third-snow {
+            animation-name: snow-fall;
+            animation-delay: 0.4s;
+        }
+    }
+}
+
+.ani-snow-onload {
+
+    //Snow
+    #first-snow {
+        animation-name: snow-fall;
+        animation-delay: 0.3s;
+    }
+
+    #second-snow {
+        animation-name: snow-fall;
+        animation-delay: 0.1s;
+    }
+
+    #third-snow {
+        animation-name: snow-fall;
+        animation-delay: 0.4s;
+    }
+}
+
+
+#first-snow,
+#second-snow,
+#third-snow {
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+@keyframes snow-fall {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        stroke-dashoffset: -12px;
+        opacity: 0;
+    }
+}

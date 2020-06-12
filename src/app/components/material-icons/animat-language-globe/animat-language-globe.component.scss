@@ -1,0 +1,45 @@
+svg {
+    &:hover {
+        #line-group {
+            animation-name: globe-spin;
+            animation-delay: 0s;
+        }
+    }
+}
+
+.globe {
+    width: 160px;
+    overflow: hidden!important;
+    svg {
+        width: 105%;
+        margin-left: -2.5%;
+    }
+}
+#line-group {
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-duration: 1s;
+}
+
+
+@keyframes globe-spin {
+    0% {
+        transform: translateX(0);
+    }
+
+  
+    50% {
+        transform: translateX(50px);
+    }
+
+    90% {
+        transform: translateX(-50px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}

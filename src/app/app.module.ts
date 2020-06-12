@@ -20,6 +20,13 @@ import { AnimatWrenchComponent } from './components/material-icons/animat-wrench
 import { AnimatBellComponent } from './components/material-icons/animat-bell/animat-bell.component';
 import { AnimatShoppingCartComponent } from './components/material-icons/animat-shopping-cart/animat-shopping-cart.component';
 import { AnimatLockComponent } from './components/material-icons/animat-lock/animat-lock.component';
+import { AnimatLanguageGlobeComponent } from './components/material-icons/animat-language-globe/animat-language-globe.component';
+import { AnimatThumbsUpComponent } from './components/material-icons/animat-thumbs-up/animat-thumbs-up.component';
+import { FeatherRainComponent } from './components/feather-icons/feather-weather-icons/feather-rain/feather-rain.component';
+import { AaFRainComponent } from './components/feather-icons/feather-weather-icons/aa-f-rain/aa-f-rain.component';
+// tslint:disable-next-line: max-line-length
+import { FeatherHeavyRainComponent } from './components/feather-icons/feather-weather-icons/feather-heavy-rain/feather-heavy-rain.component';
+import { FeatherSnowComponent } from './components/feather-icons/feather-weather-icons/feather-snow/feather-snow.component';
 
 @NgModule({
   declarations: [
@@ -33,11 +40,17 @@ import { AnimatLockComponent } from './components/material-icons/animat-lock/ani
     FeatherWeatherIconsComponent,
     EditComponent,
     ThumbsUpComponent,
+    AnimatThumbsUpComponent,
     ClockComponent,
     AnimatWrenchComponent,
     AnimatBellComponent,
     AnimatShoppingCartComponent,
-    AnimatLockComponent
+    AnimatLockComponent,
+    AnimatLanguageGlobeComponent,
+    AaFRainComponent,
+    FeatherRainComponent,
+    FeatherHeavyRainComponent,
+    FeatherSnowComponent
   ],
   imports: [
     BrowserModule,

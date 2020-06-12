@@ -1,0 +1,157 @@
+svg {
+    &:hover {
+
+        #thumb-all {
+            animation-name: thumb-all-flick;
+        }
+
+        #thumb {
+            animation-name: thumb-flick;
+        }
+
+        #hand {
+            animation-name: rotate-hand;
+        }
+
+        #sleeve {
+            animation-name: sleeve-flick;
+
+        }
+    }
+}
+
+#thumb-all {
+    transform-origin: 50% 50%;
+}
+
+#thumb {
+    transform-origin: 50% 30%;
+}
+
+#hand {
+    transform-origin: 10% 80%;
+}
+
+
+#sleeve {
+    transform-origin: 5% 80%;
+}
+
+//     }
+// }
+#thumb-all,
+#sleeve,
+#thumb,
+#hand {
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+
+
+@keyframes thumb-flick {
+    0% {
+        transform: scaleY(1);
+    }
+
+    40% {
+        transform: scaleY(.7);
+    }
+
+    50% {
+        transform: scaleY(.7) scaleX(.95);
+    }
+
+    55% {
+        transform: scaleY(1.1) scaleX(.96);
+        ;
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+@keyframes rotate-hand {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(10deg);
+    }
+
+    30% {
+        transform: rotate(10deg);
+    }
+
+
+    50% {
+        transform: rotate(-1deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes sleeve-flick {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    45% {
+        transform: rotate(10deg);
+    }
+
+
+    50% {
+        transform: rotate(-2deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes sleeve-flick {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    45% {
+        transform: rotate(5deg);
+    }
+
+
+    50% {
+        transform: rotate(-2deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes thumb-all-flick {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    45% {
+        transform: rotate(5deg);
+    }
+
+
+    50% {
+        transform: rotate(-2deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
