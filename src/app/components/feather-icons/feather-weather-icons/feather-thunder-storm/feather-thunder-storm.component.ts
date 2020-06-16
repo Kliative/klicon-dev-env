@@ -1,26 +1,30 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'feather-heavy-rain',
-  templateUrl: './feather-heavy-rain.component.html',
-  styleUrls: ['./feather-heavy-rain.component.scss']
+  selector: 'feather-thunder-storm',
+  templateUrl: './feather-thunder-storm.component.html',
+  styleUrls: ['./feather-thunder-storm.component.scss']
 })
-export class FeatherHeavyRainComponent implements OnInit {
+export class FeatherThunderStormComponent implements OnInit {
 
   iconColor = 'black';
   rainStroke: string;
   cloudStroke: string;
+  lightningStroke: string;
+
+  
 
   @Input() animationAction: string;
   @Input() strokeWidth: number;
-
+  @Input() color: string;
+  @Input() isRaining: boolean;
 
   aniOnload = false;
   aniHover = false;
 
   ngOnInit(): void {
 
-    this.cloudStroke = this.strokeWidth.toString();
+    this.cloudStroke = this.lightningStroke = this.strokeWidth.toString();
     this.rainStroke = (this.strokeWidth / 2).toString();
 
     switch (this.animationAction) {

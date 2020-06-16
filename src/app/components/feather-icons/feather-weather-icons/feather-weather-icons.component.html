@@ -1,12 +1,12 @@
 <div class="conatiner">
-
+<h1>Weather</h1>
 
   <div class="row">
     <div class="col">
       <!-- Rain Cloud -->
       <label for="">Rain Cloud</label>
       <feather-rain 
-      [strokeWidth]="3" 
+      [strokeWidth]="2" 
       [animationAction]="'hover'"
       ></feather-rain>
     </div>
@@ -32,7 +32,37 @@
     </div>
   </div>
 
-  
+  <div class="row">
+    <div class="col">
+      <!-- Rain Cloud -->
+      <label for="">Overcast</label>
+      <feather-overcast 
+      [strokeWidth]="2" 
+      [animationAction]="'hover'"
+      ></feather-overcast>
+    </div>
+    <div class="col">
+      <!-- Overcast Cloud -->
+      <label for="">Overcast Sun</label>
+      <feather-ovaercast-sun
+      [strokeWidth]="2" 
+      [animationAction]="'hover'"
+      ></feather-ovaercast-sun>
+      
+    </div>
+    <div class="col">
+      <!-- Thunder Storm -->
+      <label for="">Thunder Storm</label>
+      <feather-thunder-storm
+      [strokeWidth]="2" 
+      [animationAction]="'hover'"
+      [isRaining]="false"
+      >
+      </feather-thunder-storm>
+      
+      
+    </div>
+  </div>
 
 
 </div>

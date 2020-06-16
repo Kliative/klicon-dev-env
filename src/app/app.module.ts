@@ -27,6 +27,11 @@ import { AaFRainComponent } from './components/feather-icons/feather-weather-ico
 // tslint:disable-next-line: max-line-length
 import { FeatherHeavyRainComponent } from './components/feather-icons/feather-weather-icons/feather-heavy-rain/feather-heavy-rain.component';
 import { FeatherSnowComponent } from './components/feather-icons/feather-weather-icons/feather-snow/feather-snow.component';
+import { FeatherOvercastComponent } from './components/feather-icons/feather-weather-icons/feather-overcast/feather-overcast.component';
+import { FeatherOvaercastSunComponent } from './components/feather-icons/feather-weather-icons/feather-ovaercast-sun/feather-ovaercast-sun.component';
+import { FeatherThunderStormComponent } from './components/feather-icons/feather-weather-icons/feather-thunder-storm/feather-thunder-storm.component';
+import { FeatherUiIconsComponent } from './components/feather-icons/feather-ui-icons/feather-ui-icons.component';
+import { ChervonComponent } from './components/feather-icons/feather-ui-icons/chervon/chervon.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +55,13 @@ import { FeatherSnowComponent } from './components/feather-icons/feather-weather
     AaFRainComponent,
     FeatherRainComponent,
     FeatherHeavyRainComponent,
-    FeatherSnowComponent
+    FeatherSnowComponent,
+    FeatherOvercastComponent,
+    FeatherOvaercastSunComponent,
+    FeatherThunderStormComponent,
+    // 
+    FeatherUiIconsComponent,
+    ChervonComponent
   ],
   imports: [
     BrowserModule,
