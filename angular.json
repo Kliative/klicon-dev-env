@@ -126,5 +126,8 @@
       }
     }
   },
-  "defaultProject": "library-import"
+  "defaultProject": "library-import",
+  "cli": {
+    "analytics": false
+  }
 }
