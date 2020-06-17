@@ -45,19 +45,4 @@ export class ChervonComponent implements OnInit {
 
   }
 
-
-  loadDirection(direction: string): void {
-    switch (direction) {
-      case 'left':
-        this.aniOnload = true;
-        break;
-      case 'hover':
-        this.aniHover = true;
-        break;
-      default:
-        this.aniOnload = true;
-        break;
-    }
-  }
-
 }

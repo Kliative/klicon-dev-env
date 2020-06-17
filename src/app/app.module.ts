@@ -32,6 +32,7 @@ import { FeatherOvaercastSunComponent } from './components/feather-icons/feather
 import { FeatherThunderStormComponent } from './components/feather-icons/feather-weather-icons/feather-thunder-storm/feather-thunder-storm.component';
 import { FeatherUiIconsComponent } from './components/feather-icons/feather-ui-icons/feather-ui-icons.component';
 import { ChervonComponent } from './components/feather-icons/feather-ui-icons/chervon/chervon.component';
+import { RotateComponent } from './components/feather-icons/feather-ui-icons/rotate/rotate.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +62,8 @@ import { ChervonComponent } from './components/feather-icons/feather-ui-icons/ch
     FeatherThunderStormComponent,
     // 
     FeatherUiIconsComponent,
-    ChervonComponent
+    ChervonComponent,
+    RotateComponent
   ],
   imports: [
     BrowserModule,
