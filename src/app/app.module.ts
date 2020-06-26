@@ -33,6 +33,11 @@ import { FeatherThunderStormComponent } from './components/feather-icons/feather
 import { FeatherUiIconsComponent } from './components/feather-icons/feather-ui-icons/feather-ui-icons.component';
 import { ChervonComponent } from './components/feather-icons/feather-ui-icons/chervon/chervon.component';
 import { RotateComponent } from './components/feather-icons/feather-ui-icons/rotate/rotate.component';
+import { MenuComponent } from './components/feather-icons/feather-ui-icons/menu/menu.component';
+import { FunkyMenuComponent } from './components/feather-icons/feather-ui-icons/funky-menu/funky-menu.component';
+import { PrinterComponent } from './components/feather-icons/feather-ui-icons/printer/printer.component';
+import { LayersComponent } from './components/feather-icons/feather-ui-icons/layers/layers.component';
+import { MinimizeComponent } from './components/feather-icons/feather-ui-icons/minimize/minimize.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +68,12 @@ import { RotateComponent } from './components/feather-icons/feather-ui-icons/rot
     // 
     FeatherUiIconsComponent,
     ChervonComponent,
-    RotateComponent
+    RotateComponent,
+    MenuComponent,
+    FunkyMenuComponent,
+    PrinterComponent,
+    LayersComponent,
+    MinimizeComponent
   ],
   imports: [
     BrowserModule,
