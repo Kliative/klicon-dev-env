@@ -1,4 +1,4 @@
-.gcon-wrapper {
+.ani-hover {
     &:hover {
         #top-page {
             animation-name: top-page-ani;
@@ -13,23 +13,23 @@
     }
 }
 
-#top-page {
-    transform-origin: center 40%;
+
+.ani-onload {
+
+    #top-page {
+        animation-name: top-page-ani;
+    }
+
+    #bottom-page {
+        animation-name: bottom-page-ani;
+
+    }
+
 }
-
-
-#bottom-page {
-    transform: scaleY(0%);
-    transform-origin: center 60%;
-}
-
-
-
-
 
 #top-page,
 #bottom-page {
-    
+
     animation-iteration-count: 1;
     animation-timing-function: ease;
     animation-direction: normal;
@@ -53,6 +53,7 @@
         transform: scaleY(40%);
     }
 }
+
 @keyframes bottom-page-ani {
     0% {
         transform: scaleY(0%);

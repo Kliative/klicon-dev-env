@@ -1,20 +1,7 @@
 <div class="gcon-wrapper">
-  <!-- <svg viewBox="0 0 100 99" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M20.5 35.125V1H79V35.125" [ngStyle]="{'stroke': iconColor, 'stroke-width': lineStroke}"
-      stroke-linecap="round" stroke-linejoin="round" />
-    <path
-      d="M20.5 79H10.75C8.16414 79 5.68419 77.9728 3.85571 76.1443C2.02723 74.3158 1 71.8359 1 69.25V44.875C1 42.2891 2.02723 39.8092 3.85571 37.9807C5.68419 36.1522 8.16414 35.125 10.75 35.125H88.75C91.3359 35.125 93.8158 36.1522 95.6443 37.9807C97.4728 39.8092 98.5 42.2891 98.5 44.875V69.25C98.5 71.8359 97.4728 74.3158 95.6443 76.1443C93.8158 77.9728 91.3359 79 88.75 79H79"
-      [ngStyle]="{'stroke': iconColor, 'stroke-width': lineStroke}" stroke-linecap="round" stroke-linejoin="round" />
-    <path d="M79 59H20.5V98H79V59Z" [ngStyle]="{'stroke': iconColor, 'stroke-width': lineStroke}" stroke-linecap="round"
-      stroke-linejoin="round" />
-    <g>
-      <path id="top-page" d="M73.25 8H26.25V35H73.25V8Z" [ngStyle]="{'fill': iconColor, 'stroke-width': lineStroke}"
-        stroke-linecap="round" stroke-linejoin="round" />
-      <path id="bottom-page" d="M73.25 59H26.25V93H73.25V59Z"
-        [ngStyle]="{'fill': iconColor, 'stroke-width': lineStroke}" stroke-linecap="round" stroke-linejoin="round" />
-    </g>
-  </svg> -->
-  <svg width="20" height="20" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg id="printer" width="20" height="20" viewBox="0 0 18 18" fill="none" 
+  [ngClass]="{'ani-hover': aniHover ,'ani-onload': aniOnload }"
+  xmlns="http://www.w3.org/2000/svg">
     <path d="M5 7V1H15V7" [ngStyle]="{'stroke': iconColor, 'stroke-width': lineStroke}" stroke-linecap="round"
       stroke-linejoin="round" />
     <path
