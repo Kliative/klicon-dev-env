@@ -16,17 +16,15 @@ export class RotateComponent implements OnInit {
 
   aniOnload = false;
   aniHover = false;
-  rotateDirection: string;
+
   ngOnInit(): void {
 
     this.rotateStroke = this.strokeWidth.toString();
 
-    if (!this.clockWise) {
-      this.rotateDirection = 'clockWise';
-    } else {
-      this.rotateDirection = 'counterClockWise';
-    }
 
+    if (this.clockWise === null || this.clockWise === undefined) {
+      this.clockWise = true;
+    }
 
     switch (this.animationAction) {
       case 'onload':
