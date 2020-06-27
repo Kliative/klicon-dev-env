@@ -1,11 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'gcon-chervon',
-  templateUrl: './chervon.component.html',
-  styleUrls: ['./chervon.component.scss']
+  selector: 'garicon-chevron',
+  templateUrl: './chevron.component.html',
+  styleUrls: ['./chevron.component.scss']
 })
-export class ChervonComponent implements OnInit {
+export class ChevronComponent implements OnInit {
   iconColor = 'black';
   
   chevronStroke: string;
@@ -22,8 +22,8 @@ export class ChervonComponent implements OnInit {
 
     this.chevronStroke = this.strokeWidth.toString();
 
-    if (!this.animationAction) {
-      this.animationAction = 'right';
+    if (!this.chevronDirection) {
+      this.chevronDirection = 'right';
     }
     if (this.double) {
       this.correctViewBox = '0 0  13 16';
