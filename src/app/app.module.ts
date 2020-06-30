@@ -38,6 +38,7 @@ import { FunkyMenuComponent } from './components/feather-icons/feather-ui-icons/
 import { PrinterComponent } from './components/feather-icons/feather-ui-icons/printer/printer.component';
 import { LayersComponent } from './components/feather-icons/feather-ui-icons/layers/layers.component';
 import { MinimizeComponent } from './components/feather-icons/feather-ui-icons/minimize/minimize.component';
+import { ChevronComponent } from './components/feather-icons/feather-ui-icons/chevron/chevron.component';
 
 @NgModule({
   declarations: [
@@ -67,7 +68,7 @@ import { MinimizeComponent } from './components/feather-icons/feather-ui-icons/m
     FeatherThunderStormComponent,
     // 
     FeatherUiIconsComponent,
-    ChervonComponent,
+    ChevronComponent,
     RotateComponent,
     MenuComponent,
     FunkyMenuComponent,

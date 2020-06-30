@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'garicon-chevron',
+  selector: 'gcon-chevron',
   templateUrl: './chevron.component.html',
   styleUrls: ['./chevron.component.scss']
 })
