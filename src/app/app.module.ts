@@ -39,6 +39,7 @@ import { PrinterComponent } from './components/feather-icons/feather-ui-icons/pr
 import { LayersComponent } from './components/feather-icons/feather-ui-icons/layers/layers.component';
 import { MinimizeComponent } from './components/feather-icons/feather-ui-icons/minimize/minimize.component';
 import { ChevronComponent } from './components/feather-icons/feather-ui-icons/chevron/chevron.component';
+import { SunComponent } from './components/feather-icons/feather-ui-icons/sun/sun.component';
 
 @NgModule({
   declarations: [
@@ -74,7 +75,9 @@ import { ChevronComponent } from './components/feather-icons/feather-ui-icons/ch
     FunkyMenuComponent,
     PrinterComponent,
     LayersComponent,
-    MinimizeComponent
+    MinimizeComponent,
+    // 
+    SunComponent,
   ],
   imports: [
     BrowserModule,
