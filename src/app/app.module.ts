@@ -31,7 +31,7 @@ import { FeatherOvercastComponent } from './components/feather-icons/feather-wea
 import { FeatherOvaercastSunComponent } from './components/feather-icons/feather-weather-icons/feather-ovaercast-sun/feather-ovaercast-sun.component';
 import { FeatherThunderStormComponent } from './components/feather-icons/feather-weather-icons/feather-thunder-storm/feather-thunder-storm.component';
 import { FeatherUiIconsComponent } from './components/feather-icons/feather-ui-icons/feather-ui-icons.component';
-import { ChervonComponent } from './components/feather-icons/feather-ui-icons/chervon/chervon.component';
+
 import { RotateComponent } from './components/feather-icons/feather-ui-icons/rotate/rotate.component';
 import { MenuComponent } from './components/feather-icons/feather-ui-icons/menu/menu.component';
 import { FunkyMenuComponent } from './components/feather-icons/feather-ui-icons/funky-menu/funky-menu.component';
@@ -41,6 +41,7 @@ import { MinimizeComponent } from './components/feather-icons/feather-ui-icons/m
 import { ChevronComponent } from './components/feather-icons/feather-ui-icons/chevron/chevron.component';
 import { SunComponent } from './components/feather-icons/feather-ui-icons/sun/sun.component';
 import { MoonComponent } from './components/feather-icons/feather-ui-icons/moon/moon.component';
+import { CornerComponent } from './components/feather-icons/feather-ui-icons/corner/corner.component';
 
 @NgModule({
   declarations: [
@@ -79,7 +80,8 @@ import { MoonComponent } from './components/feather-icons/feather-ui-icons/moon/
     MinimizeComponent,
     // 
     SunComponent,
-    MoonComponent
+    MoonComponent,
+    CornerComponent
   ],
   imports: [
     BrowserModule,
