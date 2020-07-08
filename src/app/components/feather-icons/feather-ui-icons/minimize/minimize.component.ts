@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./minimize.component.scss']
 })
 export class MinimizeComponent implements OnInit {
-  iconColor = 'black';
+ @Input() iconColor:strimg;
 
   lineStroke: string;
 

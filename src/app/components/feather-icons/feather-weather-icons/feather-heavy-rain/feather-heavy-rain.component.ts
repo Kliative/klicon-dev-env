@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class FeatherHeavyRainComponent implements OnInit {
 
-  iconColor = 'black';
+ @Input() iconColor:strimg;
   rainStroke: string;
   cloudStroke: string;
 

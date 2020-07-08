@@ -26,7 +26,7 @@ import { trigger, state, style, transition, animate, keyframes } from '@angular/
 })
 export class AaFRainComponent implements OnInit {
 
-  iconColor = 'black';
+ @Input() iconColor:strimg;
   rainStroke: string;
   cloudStroke: string;
   @Input() animationAction: string;

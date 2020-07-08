@@ -8,7 +8,7 @@ import { EventEmitter } from 'protractor';
 })
 export class FeatherRainComponent implements OnInit {
 
-  iconColor = 'black';
+ @Input() iconColor:strimg;
   rainStroke: string;
   cloudStroke: string;
   @Input() animationAction: string;

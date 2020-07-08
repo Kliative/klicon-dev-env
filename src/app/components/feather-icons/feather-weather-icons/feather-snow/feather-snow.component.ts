@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./feather-snow.component.scss']
 })
 export class FeatherSnowComponent implements OnInit {
-  iconColor = 'black';
+ @Input() iconColor:strimg;
   rainStroke: string;
   cloudStroke: string;
   @Input() animationAction: string;
