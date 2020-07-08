@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./printer.component.scss']
 })
 export class PrinterComponent implements OnInit {
-  iconColor = 'black';
+ @Input() iconColor:strimg;
 
   lineStroke: string;
 

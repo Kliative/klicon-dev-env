@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
-  iconColor = 'black';
+ @Input() iconColor:strimg;
 
   rotateStroke: string;
 

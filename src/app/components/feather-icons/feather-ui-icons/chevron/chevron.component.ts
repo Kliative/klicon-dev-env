@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./chevron.component.scss']
 })
 export class ChevronComponent implements OnInit {
-  iconColor = 'black';
+ @Input() iconColor:strimg;
   
   chevronStroke: string;
   correctViewBox: string;

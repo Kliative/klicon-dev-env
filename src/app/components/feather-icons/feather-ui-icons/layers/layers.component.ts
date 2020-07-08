@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./layers.component.scss']
 })
 export class LayersComponent implements OnInit {
-  iconColor = 'black';
+ @Input() iconColor:strimg;
 
   lineStroke: string;
 

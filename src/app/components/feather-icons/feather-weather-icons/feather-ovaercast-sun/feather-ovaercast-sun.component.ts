@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class FeatherOvaercastSunComponent implements OnInit {
 
-  iconColor = 'black';
+ @Input() iconColor:strimg;
   rayStroke: string;
   cloudStroke: string;
 

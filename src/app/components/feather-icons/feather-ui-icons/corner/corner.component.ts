@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./corner.component.scss']
 })
 export class CornerComponent implements OnInit {
-  iconColor = 'black';
+ @Input() iconColor:strimg;
 
   lineStroke: string;
 

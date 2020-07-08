@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./funky-menu.component.scss']
 })
 export class FunkyMenuComponent implements OnInit {
-  iconColor = 'black';
+ @Input() iconColor:strimg;
 
   rotateStroke: string;
 
