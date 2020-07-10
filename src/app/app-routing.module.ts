@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { GenericWelcomeComponent } from './components/generic-welcome/generic-welcome.component';
-import { WelcomeComponent } from './components/welcome/welcome.component';
-import { MaterialIconsComponent } from './components/material-icons/material-icons.component';
-import { CovidIconsComponent } from './components/covid-icons/covid-icons.component';
-import { FeatherIconsComponent } from './components/feather-icons/feather-icons.component';
+import { GenericWelcomeComponent } from './components/pre-gcon/generic-welcome/generic-welcome.component';
+import { WelcomeComponent } from './components/pre-gcon/welcome/welcome.component';
+import { MaterialIconsComponent } from './components/pre-gcon/material-icons/material-icons.component';
+import { CovidIconsComponent } from './components/pre-gcon/covid-icons/covid-icons.component';
+import { FeatherIconsComponent } from './components/pre-gcon/feather-icons/feather-icons.component';
 
 
 const routes: Routes = [

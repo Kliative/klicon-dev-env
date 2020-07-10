@@ -5,43 +5,43 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material';
-import { GenericWelcomeComponent } from './components/generic-welcome/generic-welcome.component';
-import { WelcomeComponent } from './components/welcome/welcome.component';
-import { MaterialIconsComponent } from './components/material-icons/material-icons.component';
-import { MiFormComponent } from './components/material-icons/mi-form/mi-form.component';
+import { GenericWelcomeComponent } from './components/pre-gcon/generic-welcome/generic-welcome.component';
+import { WelcomeComponent } from './components/pre-gcon/welcome/welcome.component';
+import { MaterialIconsComponent } from './components/pre-gcon/material-icons/material-icons.component';
+import { MiFormComponent } from './components/pre-gcon/material-icons/mi-form/mi-form.component';
+import { CovidIconsComponent } from './components/pre-gcon/covid-icons/covid-icons.component';
+import { FeatherIconsComponent } from './components/pre-gcon/feather-icons/feather-icons.component';
+import { FeatherWeatherIconsComponent } from './components/pre-gcon/feather-icons/feather-weather-icons/feather-weather-icons.component';
+import { EditComponent } from './components/pre-gcon/material-icons/edit/edit.component';
+import { ThumbsUpComponent } from './components/pre-gcon/material-icons/thumbs-up/thumbs-up.component';
+import { AnimatThumbsUpComponent } from './components/pre-gcon/material-icons/animat-thumbs-up/animat-thumbs-up.component';
+import { ClockComponent } from './components/pre-gcon/material-icons/clock/clock.component';
+import { AnimatWrenchComponent } from './components/pre-gcon/material-icons/animat-wrench/animat-wrench.component';
+import { AnimatBellComponent } from './components/pre-gcon/material-icons/animat-bell/animat-bell.component';
+import { AnimatShoppingCartComponent } from './components/pre-gcon/material-icons/animat-shopping-cart/animat-shopping-cart.component';
+import { AnimatLockComponent } from './components/pre-gcon/material-icons/animat-lock/animat-lock.component';
+import { AnimatLanguageGlobeComponent } from './components/pre-gcon/material-icons/animat-language-globe/animat-language-globe.component';
+import { AaFRainComponent } from './components/pre-gcon/feather-icons/feather-weather-icons/aa-f-rain/aa-f-rain.component';
+import { FeatherRainComponent } from './components/pre-gcon/feather-icons/feather-weather-icons/feather-rain/feather-rain.component';
+import { FeatherHeavyRainComponent } from './components/pre-gcon/feather-icons/feather-weather-icons/feather-heavy-rain/feather-heavy-rain.component';
+import { FeatherSnowComponent } from './components/pre-gcon/feather-icons/feather-weather-icons/feather-snow/feather-snow.component';
+import { FeatherOvercastComponent } from './components/pre-gcon/feather-icons/feather-weather-icons/feather-overcast/feather-overcast.component';
+import { FeatherOvaercastSunComponent } from './components/pre-gcon/feather-icons/feather-weather-icons/feather-ovaercast-sun/feather-ovaercast-sun.component';
+import { FeatherThunderStormComponent } from './components/pre-gcon/feather-icons/feather-weather-icons/feather-thunder-storm/feather-thunder-storm.component';
+import { FeatherUiIconsComponent } from './components/pre-gcon/feather-icons/feather-ui-icons/feather-ui-icons.component';
+import { ChevronComponent } from './components/pre-gcon/feather-icons/feather-ui-icons/chevron/chevron.component';
+import { RotateComponent } from './components/pre-gcon/feather-icons/feather-ui-icons/rotate/rotate.component';
+import { MenuComponent } from './components/pre-gcon/feather-icons/feather-ui-icons/menu/menu.component';
+import { FunkyMenuComponent } from './components/pre-gcon/feather-icons/feather-ui-icons/funky-menu/funky-menu.component';
+import { PrinterComponent } from './components/pre-gcon/feather-icons/feather-ui-icons/printer/printer.component';
+import { LayersComponent } from './components/pre-gcon/feather-icons/feather-ui-icons/layers/layers.component';
+import { MinimizeComponent } from './components/pre-gcon/feather-icons/feather-ui-icons/minimize/minimize.component';
+import { SunComponent } from './components/pre-gcon/feather-icons/feather-ui-icons/sun/sun.component';
+import { MoonComponent } from './components/pre-gcon/feather-icons/feather-ui-icons/moon/moon.component';
+import { CornerComponent } from './components/pre-gcon/feather-icons/feather-ui-icons/corner/corner.component';
+import { BaseComponent } from './components/base/base.component';
 import { HttpClientModule } from '@angular/common/http';
-import { CovidIconsComponent } from './components/covid-icons/covid-icons.component';
-import { FeatherIconsComponent } from './components/feather-icons/feather-icons.component';
-import { FeatherWeatherIconsComponent } from './components/feather-icons/feather-weather-icons/feather-weather-icons.component';
-import { EditComponent } from './components/material-icons/edit/edit.component';
-import { ThumbsUpComponent } from './components/material-icons/thumbs-up/thumbs-up.component';
-import { ClockComponent } from './components/material-icons/clock/clock.component';
-import { AnimatWrenchComponent } from './components/material-icons/animat-wrench/animat-wrench.component';
-import { AnimatBellComponent } from './components/material-icons/animat-bell/animat-bell.component';
-import { AnimatShoppingCartComponent } from './components/material-icons/animat-shopping-cart/animat-shopping-cart.component';
-import { AnimatLockComponent } from './components/material-icons/animat-lock/animat-lock.component';
-import { AnimatLanguageGlobeComponent } from './components/material-icons/animat-language-globe/animat-language-globe.component';
-import { AnimatThumbsUpComponent } from './components/material-icons/animat-thumbs-up/animat-thumbs-up.component';
-import { FeatherRainComponent } from './components/feather-icons/feather-weather-icons/feather-rain/feather-rain.component';
-import { AaFRainComponent } from './components/feather-icons/feather-weather-icons/aa-f-rain/aa-f-rain.component';
-// tslint:disable-next-line: max-line-length
-import { FeatherHeavyRainComponent } from './components/feather-icons/feather-weather-icons/feather-heavy-rain/feather-heavy-rain.component';
-import { FeatherSnowComponent } from './components/feather-icons/feather-weather-icons/feather-snow/feather-snow.component';
-import { FeatherOvercastComponent } from './components/feather-icons/feather-weather-icons/feather-overcast/feather-overcast.component';
-import { FeatherOvaercastSunComponent } from './components/feather-icons/feather-weather-icons/feather-ovaercast-sun/feather-ovaercast-sun.component';
-import { FeatherThunderStormComponent } from './components/feather-icons/feather-weather-icons/feather-thunder-storm/feather-thunder-storm.component';
-import { FeatherUiIconsComponent } from './components/feather-icons/feather-ui-icons/feather-ui-icons.component';
 
-import { RotateComponent } from './components/feather-icons/feather-ui-icons/rotate/rotate.component';
-import { MenuComponent } from './components/feather-icons/feather-ui-icons/menu/menu.component';
-import { FunkyMenuComponent } from './components/feather-icons/feather-ui-icons/funky-menu/funky-menu.component';
-import { PrinterComponent } from './components/feather-icons/feather-ui-icons/printer/printer.component';
-import { LayersComponent } from './components/feather-icons/feather-ui-icons/layers/layers.component';
-import { MinimizeComponent } from './components/feather-icons/feather-ui-icons/minimize/minimize.component';
-import { ChevronComponent } from './components/feather-icons/feather-ui-icons/chevron/chevron.component';
-import { SunComponent } from './components/feather-icons/feather-ui-icons/sun/sun.component';
-import { MoonComponent } from './components/feather-icons/feather-ui-icons/moon/moon.component';
-import { CornerComponent } from './components/feather-icons/feather-ui-icons/corner/corner.component';
 
 @NgModule({
   declarations: [
@@ -81,7 +81,8 @@ import { CornerComponent } from './components/feather-icons/feather-ui-icons/cor
     // 
     SunComponent,
     MoonComponent,
-    CornerComponent
+    CornerComponent,
+    BaseComponent
   ],
   imports: [
     BrowserModule,
