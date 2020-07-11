@@ -1,28 +1,33 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'garicon-moon',
-  templateUrl: './moon.component.html',
-  styleUrls: ['./moon.component.scss']
+  selector: 'gcon-rotate',
+  templateUrl: './rotate.component.html',
+  styleUrls: ['./rotate.component.scss']
 })
-export class MoonComponent implements OnInit {
+export class RotateComponent implements OnInit {
+  @Input() iconColor:string;
 
-  @Input() iconColor: string;
-
-  lineStroke: string;
+  rotateStroke: string;
 
   @Input() animationAction: string;
   @Input() strokeWidth: number;
+  @Input() clockWise: boolean;
 
   aniOnload = false;
   aniHover = false;
 
   ngOnInit(): void {
-    this.lineStroke = `${this.strokeWidth}`;
-    
+
    
 
-    console.warn(this.iconColor);
+    this.rotateStroke = this.strokeWidth.toString();
+
+
+    if (this.clockWise === null || this.clockWise === undefined) {
+      this.clockWise = true;
+    }
+
     switch (this.animationAction) {
       case 'onload':
         this.aniOnload = true;

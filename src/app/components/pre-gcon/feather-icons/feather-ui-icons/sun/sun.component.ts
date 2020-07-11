@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'gcon-sun',
+  selector: 'garicon-sun',
   templateUrl: './sun.component.html',
   styleUrls: ['./sun.component.scss']
 })

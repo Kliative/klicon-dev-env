@@ -1,12 +1,12 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'garicon-corner',
+  selector: 'gcon-corner',
   templateUrl: './corner.component.html',
   styleUrls: ['./corner.component.scss']
 })
 export class CornerComponent implements OnInit {
- @Input() iconColor:string;
+  @Input() iconColor:string;
 
   lineStroke: string;
 
@@ -22,6 +22,7 @@ export class CornerComponent implements OnInit {
   aniHover = false;
 
   ngOnInit(): void {
+ 
     this.lineStroke = `${this.strokeWidth}`;
     if (!this.direction) {
       this.direction = 'right';

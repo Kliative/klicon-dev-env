@@ -1,28 +1,31 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'garicon-moon',
-  templateUrl: './moon.component.html',
-  styleUrls: ['./moon.component.scss']
+  selector: 'gcon-overcast-sun',
+  templateUrl: './overcast-sun.component.html',
+  styleUrls: ['./overcast-sun.component.scss']
 })
-export class MoonComponent implements OnInit {
+export class OvercastSunComponent implements OnInit {
 
-  @Input() iconColor: string;
-
-  lineStroke: string;
+  @Input() iconColor:string;
+  rayStroke: string;
+  cloudStroke: string;
 
   @Input() animationAction: string;
   @Input() strokeWidth: number;
+
 
   aniOnload = false;
   aniHover = false;
 
   ngOnInit(): void {
-    this.lineStroke = `${this.strokeWidth}`;
-    
+
    
 
-    console.warn(this.iconColor);
+   
+    this.cloudStroke = this.strokeWidth.toString();
+    this.rayStroke = ((this.strokeWidth / 3) * 2).toString();
+
     switch (this.animationAction) {
       case 'onload':
         this.aniOnload = true;

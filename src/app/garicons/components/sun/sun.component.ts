@@ -1,13 +1,12 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'garicon-moon',
-  templateUrl: './moon.component.html',
-  styleUrls: ['./moon.component.scss']
+  selector: 'gcon-sun',
+  templateUrl: './sun.component.html',
+  styleUrls: ['./sun.component.scss']
 })
-export class MoonComponent implements OnInit {
-
-  @Input() iconColor: string;
+export class SunComponent implements OnInit {
+  @Input() iconColor = 'currentColor';
 
   lineStroke: string;
 
@@ -19,10 +18,7 @@ export class MoonComponent implements OnInit {
 
   ngOnInit(): void {
     this.lineStroke = `${this.strokeWidth}`;
-    
-   
 
-    console.warn(this.iconColor);
     switch (this.animationAction) {
       case 'onload':
         this.aniOnload = true;

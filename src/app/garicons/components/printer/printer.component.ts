@@ -1,28 +1,27 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'garicon-moon',
-  templateUrl: './moon.component.html',
-  styleUrls: ['./moon.component.scss']
+  selector: 'gcon-printer',
+  templateUrl: './printer.component.html',
+  styleUrls: ['./printer.component.scss']
 })
-export class MoonComponent implements OnInit {
-
-  @Input() iconColor: string;
+export class PrinterComponent implements OnInit {
+  @Input() iconColor:string;
 
   lineStroke: string;
 
   @Input() animationAction: string;
   @Input() strokeWidth: number;
 
+
   aniOnload = false;
   aniHover = false;
 
   ngOnInit(): void {
-    this.lineStroke = `${this.strokeWidth}`;
-    
-   
 
-    console.warn(this.iconColor);
+   
+    this.lineStroke = `${this.strokeWidth}`;
+
     switch (this.animationAction) {
       case 'onload':
         this.aniOnload = true;
