@@ -5,6 +5,7 @@ import { WelcomeComponent } from './components/pre-gcon/welcome/welcome.componen
 import { MaterialIconsComponent } from './components/pre-gcon/material-icons/material-icons.component';
 import { CovidIconsComponent } from './components/pre-gcon/covid-icons/covid-icons.component';
 import { FeatherIconsComponent } from './components/pre-gcon/feather-icons/feather-icons.component';
+import { GariconsModule } from './garicons/garicons.module';
 
 
 const routes: Routes = [
@@ -19,6 +20,10 @@ const routes: Routes = [
   {
     path: 'gen-wel',
     component: GenericWelcomeComponent
+  },
+  {
+    path: 'gcon',
+    loadChildren: './garicons/garicons.module#GariconsModule'
   },
   {
     path: 'mat',

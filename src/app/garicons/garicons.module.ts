@@ -16,11 +16,13 @@ import { ChevronComponent } from './components/chevron/chevron.component';
 import { MoonComponent } from './components/moon/moon.component';
 import { SunComponent } from './components/sun/sun.component';
 import { CornerComponent } from './components/corner/corner.component';
+import { CommonModule } from '@angular/common';
+import { GariconRoutingModule } from './garicon-routing.module';
 
 @NgModule({
   imports: [
-    BrowserModule,
-    BrowserAnimationsModule
+    CommonModule,
+    GariconRoutingModule
   ],
   declarations: [
     GariconsComponent,

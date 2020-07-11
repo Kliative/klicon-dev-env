@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'gcon-corner',
+  selector: 'garicon-corner',
   templateUrl: './corner.component.html',
   styleUrls: ['./corner.component.scss']
 })

@@ -2,7 +2,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'gi-garicons',
-  template: ` `,
+  templateUrl: 'garicons.component.html',
   encapsulation: ViewEncapsulation.None,
   styleUrls: ['garicons.component.scss']
 })
