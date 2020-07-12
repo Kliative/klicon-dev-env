@@ -28,7 +28,6 @@ export class BaseComponent implements OnChanges {
 
     this.setAnimationActionYype(this.animationAction);
 
-
   }
 
   private initialiseLineStroke(strokeWidth: number): string {
@@ -39,7 +38,7 @@ export class BaseComponent implements OnChanges {
     return dimension ? `${dimension}px` : `50px`;
   }
   private setAnimationActionYype(animationAction: string): void {
-    switch (this.animationAction) {
+    switch (animationAction) {
       case 'onload':
         this.aniOnload = true;
         break;
