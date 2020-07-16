@@ -22,13 +22,25 @@
     <hr>
     <div class="row" style="color: red;">
         <div class="col">
-            <gcon-chevron [doubleChevron]="true" [chevronDirection]="'up'" [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'"></gcon-chevron>
+            <gcon-chevron [doubleChevron]="true" [chevronDirection]="'up'" [dimension]="30" [strokeWidth]="2"
+                [animationAction]="'hover'"></gcon-chevron>
         </div>
         <div class="col">
-            <gcon-rotate [rotateClockWise]="true" [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'"></gcon-rotate>
+            <gcon-rotate [rotateClockWise]="true" [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'">
+            </gcon-rotate>
         </div>
         <div class="col">
-            <gcon-corner [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'"></gcon-corner>
+            <gcon-corner [turn]="'up'" [direction]="'left'" [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'"></gcon-corner>
         </div>
+    </div>
+
+    <h1 class="pt-5">Base Components: Weather</h1>
+    <hr>
+    <div class="row" style="color: green;">
+        <div class="col">
+            <gcon-sun [dimension]="30" [strokeWidth]="2"
+                [animationAction]="'hover'"></gcon-sun>
+        </div>
+      
     </div>
 </div>

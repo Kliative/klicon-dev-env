@@ -2,12 +2,12 @@
     &:hover {
         #sun {
             animation-name: sun-appear;
-            animation-delay: .2s;
+            
         }
 
-        #sun line {
-            animation-name: ray-shine;
-            animation-delay: .2s;
+        #rays {
+            animation-name: sun-ray-shine;
+            
         }
     }
 
@@ -19,19 +19,20 @@
 
     #sun {
         animation-name: sun-appear;
-        animation-delay: 0s;
+        
     }
 
-    #sun line {
+    #rays {
         animation-name: sun-ray-shine;
-        animation-delay: .1s;
+        
     }
 
 }
 
 #sun,
-#sun line {
-    animation-duration: 2s;
+#rays {
+    animation-delay: 0s;
+    animation-duration: 1s;
     animation-iteration-count: 2;
     animation-timing-function: ease;
     animation-direction: normal;
@@ -43,10 +44,15 @@
     0% {
         opacity: 0;
     }
-
+    50% {
+        
+        opacity: 1;
+    }
     100% {
         opacity: 1;
     }
+ 
+    
 }
 
 @keyframes sun-ray-shine {
@@ -54,7 +60,7 @@
         
         opacity: 0;
     }
-
+   
     100% {
         
         opacity: 1;
