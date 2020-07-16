@@ -13,14 +13,18 @@ export class ChevronComponent extends BaseComponent implements OnInit {
   @Input() doubleChevron: boolean;
 
   ngOnInit(): void {
-    if (!this.chevronDirection) {
-      this.chevronDirection = 'right';
-    }
-    if (this.doubleChevron) {
-      this.correctViewBox = '0 0  13 16';
-    } else {
-      this.correctViewBox = '0 0 20 16';
-    }
+
+    this.chevronDirection = this.initialiseChevronDirection(this.chevronDirection);
+
+    this.correctViewBox = this.initialiseChevronViewBox(this.doubleChevron);
+  }
+
+  private initialiseChevronDirection(chevronDirection: string): string {
+    return chevronDirection ? chevronDirection : 'right';
+  }
+
+  private initialiseChevronViewBox(doubleChevron: boolean): string {
+    return doubleChevron ? '0 0  13 16' : '0 0 20 16';
   }
 
 }
