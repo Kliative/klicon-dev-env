@@ -49,9 +49,8 @@ describe('LayersComponent', () => {
     compIn.animationAction = 'hover';
     compIn.strokeWidth = 1;
     comp.detectChanges();
-  
+
     expect(compIn.aniHover).toBeTrue();
     expect(svg.classList).toContain('ani-hover');
   });
-
 });

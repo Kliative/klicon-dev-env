@@ -21,6 +21,7 @@ export class BaseComponent implements OnChanges {
   aniHover = false;
 
   ngOnChanges(): void {
+    this.iconColor = this.initialiseStrokeColor(this.iconColor);
 
     this.lineStroke = this.initialiseLineStroke(this.strokeWidth);
 
@@ -29,6 +30,11 @@ export class BaseComponent implements OnChanges {
     this.setAnimationActionYype(this.animationAction);
 
   }
+
+  private initialiseStrokeColor(iconColor: string): string {
+    return iconColor ? `${iconColor}` : 'currentColor';
+  }
+
 
   private initialiseLineStroke(strokeWidth: number): string {
     return strokeWidth ? `${strokeWidth}` : '2';

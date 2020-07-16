@@ -39,8 +39,9 @@ import { MinimizeComponent } from './components/pre-gcon/feather-icons/feather-u
 import { SunComponent } from './components/pre-gcon/feather-icons/feather-ui-icons/sun/sun.component';
 import { MoonComponent } from './components/pre-gcon/feather-icons/feather-ui-icons/moon/moon.component';
 import { CornerComponent } from './components/pre-gcon/feather-icons/feather-ui-icons/corner/corner.component';
-import { BaseComponent } from './components/base/base.component';
+
 import { HttpClientModule } from '@angular/common/http';
+import { BaseComponent } from './garicons/components/base/base.component';
 
 
 @NgModule({
