@@ -18,6 +18,8 @@ import { SunComponent } from './components/sun/sun.component';
 import { CornerComponent } from './components/corner/corner.component';
 import { CommonModule } from '@angular/common';
 import { GariconRoutingModule } from './garicon-routing.module';
+import { ActivityComponent } from './components/activity/activity.component';
+import { AirplayComponent } from './components/airplay/airplay.component';
 
 @NgModule({
   imports: [
@@ -41,7 +43,10 @@ import { GariconRoutingModule } from './garicon-routing.module';
     // Misc
     CornerComponent,
     MoonComponent,
-    SunComponent
+    SunComponent,
+    ActivityComponent,
+    AirplayComponent
+    
   ],
   exports: [
     GariconsComponent,
@@ -60,7 +65,9 @@ import { GariconRoutingModule } from './garicon-routing.module';
     // Misc
     CornerComponent,
     MoonComponent,
-    SunComponent
+    SunComponent,
+    ActivityComponent,
+    AirplayComponent
   ]
 })
 export class GariconsModule { }
