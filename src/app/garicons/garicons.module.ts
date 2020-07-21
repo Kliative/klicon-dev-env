@@ -48,7 +48,6 @@ import { AlertComponent } from './components/alert/alert.component';
     ActivityComponent,
     AirplayComponent,
     AlertComponent
-    
   ],
   exports: [
     GariconsComponent,
