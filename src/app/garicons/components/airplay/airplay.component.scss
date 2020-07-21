@@ -1,0 +1,80 @@
+.ani-hover {
+    &:hover {
+        #ap-screen {
+            animation-name: ap-screen-ani;
+        }
+
+        #ap-play {
+            animation-name: ap-play-ani;
+        }
+    }
+}
+
+.ani-onload {
+    #ap-screen {
+        animation-name: ap-screen-ani;
+    }
+
+    #ap-play {
+        animation-name: ap-play-ani;
+    }
+}
+
+#ap-screen {
+    stroke-dasharray: 60;
+    stroke-dashoffset: 10;
+
+}
+
+#ap-screen,
+#ap-play {
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-delay: 0s;
+    animation-duration: 1s;
+
+}
+
+
+@keyframes ap-screen-ani {
+    0% {
+        stroke-dasharray: 60;
+        stroke-dashoffset: 10;
+    }
+
+    40% {
+        stroke-dasharray: 60;
+        stroke-dashoffset: 60;
+    }
+
+    60% {
+        stroke-dasharray: 60;
+        stroke-dashoffset: 60;
+    }
+
+    100% {
+
+        stroke-dasharray: 60;
+        stroke-dashoffset: 120;
+    }
+}
+
+
+
+
+@keyframes ap-play-ani {
+    0% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(20%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}

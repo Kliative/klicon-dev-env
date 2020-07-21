@@ -1,7 +1,20 @@
 <div class="container-fluid">
-    <h1 class="pt-5">Base Components: UI</h1>
+    <h1>NEW</h1>
     <hr>
     <div class="row" style="color: blue;">
+
+        <div class="col">
+            <gcon-activity [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'"></gcon-activity>
+        </div>
+        <div class="col">
+            <gcon-airplay [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'"></gcon-airplay>
+        </div>
+    </div>
+
+
+    <h1 class="pt-5">Base Components: UI</h1>
+    <hr>
+    <div class="row" >
         <div class="col">
             <gcon-menu [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'"></gcon-menu>
         </div>
@@ -20,7 +33,7 @@
     </div>
     <h1 class="pt-5">Base Components: Directions</h1>
     <hr>
-    <div class="row" style="color: red;">
+    <div class="row">
         <div class="col">
             <gcon-chevron [doubleChevron]="true" [chevronDirection]="'up'" [dimension]="30" [strokeWidth]="2"
                 [animationAction]="'hover'"></gcon-chevron>
@@ -30,17 +43,17 @@
             </gcon-rotate>
         </div>
         <div class="col">
-            <gcon-corner [turn]="'up'" [direction]="'left'" [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'"></gcon-corner>
+            <gcon-corner [turn]="'up'" [direction]="'left'" [dimension]="30" [strokeWidth]="2"
+                [animationAction]="'hover'"></gcon-corner>
         </div>
     </div>
 
     <h1 class="pt-5">Base Components: Weather</h1>
     <hr>
-    <div class="row" style="color: green;">
+    <div class="row">
         <div class="col">
-            <gcon-sun [dimension]="30" [strokeWidth]="2"
-                [animationAction]="'hover'"></gcon-sun>
+            <gcon-sun [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'"></gcon-sun>
         </div>
-      
+
     </div>
 </div>
