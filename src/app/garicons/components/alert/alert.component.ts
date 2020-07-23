@@ -23,7 +23,7 @@ export class AlertComponent extends BaseComponent implements OnInit {
     this.alertBoarderShape = this.initialiseBoarderShape(this.alertBoarderShape);
   }
 
-  private initialiseBoarderShape(alertBoarderShape: string): string {
+  initialiseBoarderShape(alertBoarderShape: string): string {
     return alertBoarderShape ? alertBoarderShape : 'circle';
   }
 }

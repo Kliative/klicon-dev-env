@@ -8,13 +8,23 @@ import { BaseComponent } from '../base/base.component';
 })
 export class RotateComponent extends BaseComponent implements OnInit {
 
-  @Input() rotateClockWise: boolean;
+
+  rotateClockWise: boolean;
+
+  @Input('rotateClockWise')
+  set setRotateClockWise(rotateClockWise: boolean) {
+    this.rotateClockWise = rotateClockWise;
+  }
+
+  get getRotateClockWise(): boolean {
+    return this.rotateClockWise;
+  }
 
   ngOnInit(): void {
     this.rotateClockWise = this.initialiseRotationDirection(this.rotateClockWise);
   }
 
-  private initialiseRotationDirection(rotateClockWise: boolean): boolean {
+  initialiseRotationDirection(rotateClockWise?: boolean): boolean {
     return rotateClockWise === null || rotateClockWise === undefined ? true : false;
   }
 

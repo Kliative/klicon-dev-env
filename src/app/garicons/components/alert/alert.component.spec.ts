@@ -8,7 +8,7 @@ import { AlertComponent } from './alert.component';
 describe('AlertComponent', () => {
   let component: AlertComponent;
   let fixture: ComponentFixture<AlertComponent>;
-
+  let el: DebugElement;
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ AlertComponent ]
@@ -19,10 +19,13 @@ describe('AlertComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(AlertComponent);
     component = fixture.componentInstance;
+    el = fixture.debugElement;
+    component.strokeWidth = 1;
     fixture.detectChanges();
   });
 
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
 });

@@ -6,6 +6,4 @@ import { BaseComponent } from '../base/base.component';
   templateUrl: './moon.component.html',
   styleUrls: ['./moon.component.scss']
 })
-export class MoonComponent extends BaseComponent {
-  
-}
+export class MoonComponent extends BaseComponent {}

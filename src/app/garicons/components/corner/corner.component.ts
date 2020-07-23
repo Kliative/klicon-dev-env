@@ -17,7 +17,7 @@ export class CornerComponent extends BaseComponent implements OnInit {
     this.initialiseDirectionAndTurn(this.direction, this.turn);
   }
 
-  private initialiseDirectionAndTurn(direction: string, turn: string): void {
+  initialiseDirectionAndTurn(direction: string, turn: string): void {
     if (!direction) {
       this.direction = 'right';
     }
