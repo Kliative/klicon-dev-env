@@ -42,6 +42,7 @@ import { CornerComponent } from './components/pre-gcon/feather-icons/feather-ui-
 
 import { HttpClientModule } from '@angular/common/http';
 import { BaseComponent } from './garicons/components/base/base.component';
+import { GariconsModule } from './garicons/garicons.module';
 
 
 @NgModule({
@@ -90,6 +91,7 @@ import { BaseComponent } from './garicons/components/base/base.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
+    GariconsModule,
     HttpClientModule
   ],
   providers: [],

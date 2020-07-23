@@ -6,12 +6,50 @@ import { Component, OnInit, Input, OnChanges } from '@angular/core';
   styleUrls: ['./base.component.scss']
 })
 export class BaseComponent implements OnChanges {
-  @Input() iconColor: string;
+
+  animationAction: string;
+  strokeWidth: number;
+  iconColor: string;
+  dimension: number;
+
+  @Input('iconColor')
+  set setIconColor(iconColor: string) {
+    this.iconColor = iconColor;
+  }
+
+  get getIconColor(): string {
+    return this.iconColor;
+  }
 
 
-  @Input() dimension: number;
-  @Input() animationAction: string;
-  @Input() strokeWidth: number;
+  @Input('dimension')
+  set setDimension(dimension: number) {
+    this.dimension = dimension;
+  }
+
+  get getDimension(): number {
+    return this.dimension;
+  }
+
+  
+  @Input('animationAction')
+  set setAnimationAction(animationAction: string) {
+    this.animationAction = animationAction;
+  }
+
+  get getAnimationAction(): string {
+    return this.animationAction;
+  }
+
+  
+  @Input('strokeWidth')
+  set setStrokeWidth(strokeWidth: number) {
+    this.strokeWidth = strokeWidth;
+  }
+
+  get getStrokeWidth(): number {
+    return this.strokeWidth;
+  }
 
 
   lineStroke: string;
