@@ -87,7 +87,7 @@ describe('ChevronComponent', () => {
 
     compIn.animationAction = 'hover';
     compIn.strokeWidth = 1;
-    compIn.double = true;
+    compIn.doubleChevron = true;
     comp.detectChanges();
 
     expect(compIn.correctViewBox).toEqual('0 0  13 16');
@@ -99,7 +99,7 @@ describe('ChevronComponent', () => {
 
     compIn.animationAction = 'hover';
     compIn.strokeWidth = 1;
-    compIn.double = false;
+    compIn.doubleChevron = false;
     comp.detectChanges();
 
     expect(compIn.correctViewBox).toEqual('0 0 20 16');

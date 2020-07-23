@@ -61,7 +61,7 @@ describe('RotateComponent', () => {
   // check if animation clockwise is set to true by defualt  and check dir-cw css has been applied
   it('should set clockwise to true on defualt', () => {
     const svg: HTMLElement = el.query(By.css('#rotate')).nativeElement;
-    expect(component.clockWise).toBeTrue();
+    expect(component.rotateClockWise).toBeTrue();
     expect(svg.classList).toContain('dir-cw');
     
   });
@@ -76,7 +76,7 @@ describe('RotateComponent', () => {
     const svg: HTMLElement = comp.debugElement.query(By.css('#rotate')).nativeElement;
     compIn.animationAction = 'hover';
     compIn.strokeWidth = 1;
-    compIn.clockWise = false;
+    compIn.rotateClockWise = false;
     comp.detectChanges();
     expect(svg.classList).toContain('dir-ccw');
     
