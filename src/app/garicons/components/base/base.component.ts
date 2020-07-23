@@ -31,7 +31,7 @@ export class BaseComponent implements OnChanges {
     return this.dimension;
   }
 
-  
+
   @Input('animationAction')
   set setAnimationAction(animationAction: string) {
     this.animationAction = animationAction;
@@ -41,7 +41,7 @@ export class BaseComponent implements OnChanges {
     return this.animationAction;
   }
 
-  
+
   @Input('strokeWidth')
   set setStrokeWidth(strokeWidth: number) {
     this.strokeWidth = strokeWidth;
@@ -65,23 +65,23 @@ export class BaseComponent implements OnChanges {
 
     this.widthHieghtDimensions = this.initialiseIconDimensions(this.dimension);
 
-    this.setAnimationActionYype(this.animationAction);
+    this.setAnimationActionType(this.animationAction);
 
   }
 
-  private initialiseStrokeColor(iconColor: string): string {
+  initialiseStrokeColor(iconColor?: string): string {
     return iconColor ? `${iconColor}` : 'currentColor';
   }
 
 
-  private initialiseLineStroke(strokeWidth: number): string {
+  initialiseLineStroke(strokeWidth?: number): string {
     return strokeWidth ? `${strokeWidth}` : '2';
   }
 
-  private initialiseIconDimensions(dimension: number): string {
+  initialiseIconDimensions(dimension?: number): string {
     return dimension ? `${dimension}px` : `50px`;
   }
-  private setAnimationActionYype(animationAction: string): void {
+  setAnimationActionType(animationAction?: string): void {
     switch (animationAction) {
       case 'onload':
         this.aniOnload = true;

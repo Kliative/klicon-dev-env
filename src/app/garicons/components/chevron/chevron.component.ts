@@ -19,12 +19,12 @@ export class ChevronComponent extends BaseComponent implements OnInit {
     this.correctViewBox = this.initialiseChevronViewBox(this.doubleChevron);
   }
 
-  private initialiseChevronDirection(chevronDirection: string): string {
+  initialiseChevronDirection(chevronDirection?: string): string {
     return chevronDirection ? chevronDirection : 'right';
   }
 
-  private initialiseChevronViewBox(doubleChevron: boolean): string {
-    return doubleChevron ? '0 0  13 16' : '0 0 20 16';
+  initialiseChevronViewBox(doubleChevron: boolean): string {
+    return doubleChevron ? '0 0 13 16' : '0 0 20 16';
   }
 
 }

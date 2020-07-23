@@ -10,13 +10,10 @@ export class PrinterComponent extends BaseComponent implements OnInit {
 
 
   ngOnInit(): void {
-
     this.lineStroke = this.initialiseLineStrokePrinter(this.strokeWidth);
-    console.warn(this.lineStroke);
-
   }
 
-  private initialiseLineStrokePrinter(strokeWidth: number): string {
+  initialiseLineStrokePrinter(strokeWidth?: number): string {
     return strokeWidth ? `${strokeWidth * .45 }` : '1.5';
   }
 }
