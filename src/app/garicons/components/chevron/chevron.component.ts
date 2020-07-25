@@ -6,13 +6,14 @@ import { BaseComponent } from '../base/base.component';
   templateUrl: './chevron.component.html',
   styleUrls: ['./chevron.component.scss']
 })
-export class ChevronComponent extends BaseComponent implements OnInit {
+export class ChevronComponent extends BaseComponent {
   correctViewBox: string;
 
   @Input() chevronDirection: string;
   @Input() doubleChevron: boolean;
 
-  ngOnInit(): void {
+  constructor() {
+    super();
 
     this.chevronDirection = this.initialiseChevronDirection(this.chevronDirection);
 

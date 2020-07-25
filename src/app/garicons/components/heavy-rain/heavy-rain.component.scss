@@ -5,7 +5,7 @@
     stroke-dashoffset: 12px;
 }
 
-.ani-heavyrain-hover {
+.ani-hover {
     &:hover {
         #heavy-rain-cloud {
             -webkit-animation-name: heavy-cloud-shake;
@@ -40,7 +40,7 @@
     }
 }
 
-.ani-heavyrain-onload {
+.ani-onload {
     #heavy-rain-cloud {
         -webkit-animation-name: heavy-cloud-shake;
                 animation-name: heavy-cloud-shake;

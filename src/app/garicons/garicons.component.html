@@ -1,7 +1,29 @@
 <div class="container-fluid">
-    <h1>NEW</h1>
+    <h1>NEW WEATHER</h1>
     <hr>
     <div class="row" style="color: blue;">
+        <div class="col">
+            <gcon-thunder-storm [dimension]="30" [isRaining]="true" [strokeWidth]="2" [animationAction]="'hover'">
+            </gcon-thunder-storm>
+        </div>
+        <div class="col">
+            <gcon-rain [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'">
+            </gcon-rain>
+        </div>
+        <div class="col">
+            <gcon-overcast-sun [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'"></gcon-overcast-sun>
+        </div>
+        <div class="col">
+            <gcon-overcast [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'"></gcon-overcast>
+        </div>
+        <div class="col">
+            <gcon-heavy-rain [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'"></gcon-heavy-rain>
+        </div>    
+    </div>
+    
+    <h1>NEW</h1>
+    <hr>
+    <div class="row">
 
         <div class="col">
             <gcon-activity [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'"></gcon-activity>
@@ -10,20 +32,19 @@
             <gcon-airplay [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'"></gcon-airplay>
         </div>
         <div class="col">
-            <gcon-alert [shape]="'triangle'" [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'"></gcon-alert>
+            <gcon-alert [shape]="'triangle'" [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'">
+            </gcon-alert>
         </div>
     </div>
 
 
     <h1 class="pt-5">Base Components: UI</h1>
     <hr>
-    <div class="row" >
+    <div class="row">
         <div class="col">
             <gcon-menu [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'"></gcon-menu>
         </div>
-        <div class="col">
-            <gcon-moon [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'"></gcon-moon>
-        </div>
+
         <div class="col">
             <gcon-minimize [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'"></gcon-minimize>
         </div>
@@ -57,6 +78,8 @@
         <div class="col">
             <gcon-sun [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'"></gcon-sun>
         </div>
-
+        <div class="col">
+            <gcon-moon [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'"></gcon-moon>
+        </div>
     </div>
 </div>

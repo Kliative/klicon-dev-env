@@ -6,7 +6,7 @@ import { BaseComponent } from '../base/base.component';
   templateUrl: './alert.component.html',
   styleUrls: ['./alert.component.scss']
 })
-export class AlertComponent extends BaseComponent implements OnInit {
+export class AlertComponent extends BaseComponent {
 
   alertBoarderShape: string;
 
@@ -19,7 +19,8 @@ export class AlertComponent extends BaseComponent implements OnInit {
     return this.alertBoarderShape;
   }
 
-  ngOnInit(): void {
+  constructor() {
+    super();
     this.alertBoarderShape = this.initialiseBoarderShape(this.alertBoarderShape);
   }
 
