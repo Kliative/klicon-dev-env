@@ -6,14 +6,15 @@ import { BaseComponent } from '../base/base.component';
   templateUrl: './corner.component.html',
   styleUrls: ['./corner.component.scss']
 })
-export class CornerComponent extends BaseComponent implements OnInit {
+export class CornerComponent extends BaseComponent {
 
   @Input() direction: string;
 
   @Input() turn: string;
 
 
-  ngOnInit(): void {
+  constructor() {
+    super();
     this.initialiseDirectionAndTurn(this.direction, this.turn);
   }
 
