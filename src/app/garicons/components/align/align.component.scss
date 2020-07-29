@@ -1,11 +1,31 @@
 .ani-hover-justify {
     &:hover {
+        #align-top-line {
+            animation-name: align-justify-ani;
+        }
+
         #align-mid-top-line {
+            animation-name: align-justify-ani;
+        }
+
+        #align-mid-bottom-line {
             animation-name: align-justify-ani;
         }
 
         #align-bottom-line {
             animation-name: align-justify-ani;
+        }
+    }
+}
+
+.ani-hover-center {
+    &:hover {
+        #align-mid-top-line {
+            animation-name: align-center-ani;
+        }
+
+        #align-bottom-line {
+            animation-name: align-center-ani;
         }
     }
 }
@@ -35,40 +55,60 @@
 }
 
 // Onload
-.ani-onload-justify {
-    &:hover {
-        #align-mid-top-line {
-            animation-name: align-justify-ani;
-        }
+.ani-onload-center {
 
-        #align-bottom-line {
-            animation-name: align-justify-ani;
-        }
+    #align-mid-top-line {
+        animation-name: align-center-ani;
     }
+
+    #align-bottom-line {
+        animation-name: align-center-ani;
+    }
+
+}
+
+.ani-onload-justify {
+
+    #align-top-line {
+        animation-name: align-justify-ani;
+    }
+
+    #align-mid-top-line {
+        animation-name: align-justify-ani;
+    }
+
+    #align-mid-bottom-line {
+        animation-name: align-justify-ani;
+    }
+
+    #align-bottom-line {
+        animation-name: align-justify-ani;
+    }
+
 }
 
 .ani-onload-right {
-    &:hover {
-        #align-mid-top-line {
-            animation-name: align-right-ani;
-        }
 
-        #align-bottom-line {
-            animation-name: align-right-ani;
-        }
+    #align-mid-top-line {
+        animation-name: align-right-ani;
     }
+
+    #align-bottom-line {
+        animation-name: align-right-ani;
+    }
+
 }
 
 .ani-onload-left {
-    &:hover {
-        #align-mid-top-line {
-            animation-name: align-left-ani;
-        }
 
-        #align-bottom-line {
-            animation-name: align-left-ani;
-        }
+    #align-mid-top-line {
+        animation-name: align-left-ani;
     }
+
+    #align-bottom-line {
+        animation-name: align-left-ani;
+    }
+
 }
 
 
@@ -123,7 +163,7 @@
     }
 }
 
-@-webkit-keyframes align-justify-ani {
+@-webkit-keyframes align-center-ani {
     0% {
         transform: scaleX(1);
     }
@@ -134,5 +174,15 @@
 
     100% {
         transform: scaleX(0.55);
+    }
+}
+
+@-webkit-keyframes align-justify-ani {
+    0% {
+        transform: scaleX(0);
+    }
+
+    100% {
+        transform: scaleX(1);
     }
 }
