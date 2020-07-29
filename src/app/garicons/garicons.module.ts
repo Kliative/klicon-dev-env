@@ -23,6 +23,7 @@ import { AirplayComponent } from './components/airplay/airplay.component';
 import { AlertComponent } from './components/alert/alert.component';
 import { AlignComponent } from './components/align/align.component';
 import { AnchorComponent } from './components/anchor/anchor.component';
+import { ArrowComponent } from './components/arrow/arrow.component';
 
 @NgModule({
   imports: [
@@ -51,7 +52,8 @@ import { AnchorComponent } from './components/anchor/anchor.component';
     AirplayComponent,
     AlertComponent,
     AlignComponent,
-    AnchorComponent
+    AnchorComponent,
+    ArrowComponent
   ],
   exports: [
     GariconsComponent,
@@ -75,7 +77,8 @@ import { AnchorComponent } from './components/anchor/anchor.component';
     AirplayComponent,
     AlertComponent,
     AlignComponent,
-    AnchorComponent
+    AnchorComponent,
+    ArrowComponent
   ]
 })
 export class GariconsModule { }

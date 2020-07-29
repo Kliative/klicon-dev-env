@@ -1,0 +1,77 @@
+.ani-hover {
+    &:hover {
+        #arrow {
+            animation-name: arrow-ani;
+
+        }
+    }
+}
+
+.ani-onload {
+    #arrow {
+        animation-name: arrow-ani;
+    }
+}
+
+.dir-right {
+    transform: rotate(0deg);
+}
+
+.dir-left {
+    transform: rotate(180deg);
+}
+
+.dir-up {
+    transform: rotate(270deg);
+}
+
+.dir-down {
+    transform: rotate(90deg);
+}
+
+.dir-up-left {
+    transform: rotate(315deg);
+}
+
+.dir-up-right {
+    transform: rotate(225deg);
+}
+.dir-down-left {
+    transform: rotate(135deg);
+}
+
+.dir-down-right {
+    transform: rotate(45deg);
+}
+#arrow {
+    animation-delay: 0s;
+    animation-duration: .5s;
+    animation-iteration-count: 2;
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+@keyframes arrow-ani {
+    0% {
+        transform: translateX(0%);
+    }
+
+    25% {
+        transform: translateX(-10%);
+    }
+
+
+    50% {
+        transform: translateX(30%);
+    }
+
+    75% {
+        transform: translateX(-10%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
