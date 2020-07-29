@@ -24,6 +24,7 @@ import { AlertComponent } from './components/alert/alert.component';
 import { AlignComponent } from './components/align/align.component';
 import { AnchorComponent } from './components/anchor/anchor.component';
 import { ArrowComponent } from './components/arrow/arrow.component';
+import { AtSignComponent } from './components/at-sign/at-sign.component';
 
 @NgModule({
   imports: [
@@ -53,7 +54,8 @@ import { ArrowComponent } from './components/arrow/arrow.component';
     AlertComponent,
     AlignComponent,
     AnchorComponent,
-    ArrowComponent
+    ArrowComponent,
+    AtSignComponent
   ],
   exports: [
     GariconsComponent,
@@ -78,7 +80,8 @@ import { ArrowComponent } from './components/arrow/arrow.component';
     AlertComponent,
     AlignComponent,
     AnchorComponent,
-    ArrowComponent
+    ArrowComponent,
+    AtSignComponent
   ]
 })
 export class GariconsModule { }
