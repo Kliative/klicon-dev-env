@@ -1,30 +1,32 @@
 <div class="container-fluid">
-    <h1>NEW WEATHER</h1>
-    <hr>
-    <div class="row" style="color: blue;">
-        <div class="col">
-            <gcon-thunder-storm [dimension]="30" [isRaining]="true" [strokeWidth]="2" [animationAction]="'hover'">
-            </gcon-thunder-storm>
-        </div>
-        <div class="col">
-            <gcon-rain [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'">
-            </gcon-rain>
-        </div>
-        <div class="col">
-            <gcon-overcast-sun [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'"></gcon-overcast-sun>
-        </div>
-        <div class="col">
-            <gcon-overcast [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'"></gcon-overcast>
-        </div>
-        <div class="col">
-            <gcon-heavy-rain [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'"></gcon-heavy-rain>
-        </div>    
-    </div>
     
     <h1>NEW</h1>
     <hr>
-    <div class="row">
-
+    <div class="row" style="color: blue;">
+        <div class="col">
+            <gcon-arrow [isCircle]="true" [arrowDirection]="'down-left'" [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'"></gcon-arrow>
+        </div>
+         <div class="col">
+            <gcon-at-sign [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'"></gcon-at-sign>
+        </div>
+       <!-- <div class="col">
+            <gcon-airplay [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'"></gcon-airplay>
+        </div>
+        <div class="col">
+            <gcon-alert [shape]="'triangle'" [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'">
+            </gcon-alert>
+        </div>
+        <div class="col">
+            <gcon-anchor [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'">
+            </gcon-anchor>
+        </div> -->
+    </div>
+    <h1 class="pt-5">NEW-ish</h1>
+    <hr>
+    <div class="row" style="color: rgb(68, 68, 142);">
+        <div class="col">
+            <gcon-align [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'"></gcon-align>
+        </div>
         <div class="col">
             <gcon-activity [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'"></gcon-activity>
         </div>
@@ -34,6 +36,10 @@
         <div class="col">
             <gcon-alert [shape]="'triangle'" [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'">
             </gcon-alert>
+        </div>
+        <div class="col">
+            <gcon-anchor [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'">
+            </gcon-anchor>
         </div>
     </div>
 
@@ -76,10 +82,30 @@
     <hr>
     <div class="row">
         <div class="col">
+            <gcon-thunder-storm [dimension]="30" [isRaining]="true" [strokeWidth]="2" [animationAction]="'hover'">
+            </gcon-thunder-storm>
+        </div>
+        <div class="col">
+            <gcon-rain [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'">
+            </gcon-rain>
+        </div>
+        <div class="col">
+            <gcon-overcast-sun [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'"></gcon-overcast-sun>
+        </div>
+        <div class="col">
+            <gcon-overcast [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'"></gcon-overcast>
+        </div>
+
+    </div>
+    <div class="row pt-3">
+        <div class="col">
             <gcon-sun [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'"></gcon-sun>
         </div>
         <div class="col">
             <gcon-moon [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'"></gcon-moon>
+        </div>
+        <div class="col">
+            <gcon-heavy-rain [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'"></gcon-heavy-rain>
         </div>
     </div>
 </div>

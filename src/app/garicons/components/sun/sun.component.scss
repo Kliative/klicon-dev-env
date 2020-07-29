@@ -1,12 +1,14 @@
 .ani-hover {
     &:hover {
         #sun {
-            animation-name: sun-appear;
+            -webkit-animation-name: sun-appear;
+                    animation-name: sun-appear;
             
         }
 
         #rays {
-            animation-name: sun-ray-shine;
+            -webkit-animation-name: sun-ray-shine;
+                    animation-name: sun-ray-shine;
             
         }
     }
@@ -18,12 +20,14 @@
 .ani-onload {
 
     #sun {
-        animation-name: sun-appear;
+        -webkit-animation-name: sun-appear;
+                animation-name: sun-appear;
         
     }
 
     #rays {
-        animation-name: sun-ray-shine;
+        -webkit-animation-name: sun-ray-shine;
+                animation-name: sun-ray-shine;
         
     }
 
@@ -31,13 +35,35 @@
 
 #sun,
 #rays {
-    animation-delay: 0s;
-    animation-duration: 1s;
-    animation-iteration-count: 2;
-    animation-timing-function: ease;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
-    animation-play-state: running;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: 2;
+            animation-iteration-count: 2;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-play-state: running;
+            animation-play-state: running;
+}
+
+@-webkit-keyframes sun-appear {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+ 
+    
 }
 
 @keyframes sun-appear {
@@ -53,6 +79,18 @@
     }
  
     
+}
+
+@-webkit-keyframes sun-ray-shine {
+    0% {
+        
+        opacity: 0;
+    }
+   
+    100% {
+        
+        opacity: 1;
+    }
 }
 
 @keyframes sun-ray-shine {

@@ -21,6 +21,10 @@ import { GariconRoutingModule } from './garicon-routing.module';
 import { ActivityComponent } from './components/activity/activity.component';
 import { AirplayComponent } from './components/airplay/airplay.component';
 import { AlertComponent } from './components/alert/alert.component';
+import { AlignComponent } from './components/align/align.component';
+import { AnchorComponent } from './components/anchor/anchor.component';
+import { ArrowComponent } from './components/arrow/arrow.component';
+import { AtSignComponent } from './components/at-sign/at-sign.component';
 
 @NgModule({
   imports: [
@@ -47,7 +51,11 @@ import { AlertComponent } from './components/alert/alert.component';
     SunComponent,
     ActivityComponent,
     AirplayComponent,
-    AlertComponent
+    AlertComponent,
+    AlignComponent,
+    AnchorComponent,
+    ArrowComponent,
+    AtSignComponent
   ],
   exports: [
     GariconsComponent,
@@ -69,7 +77,11 @@ import { AlertComponent } from './components/alert/alert.component';
     SunComponent,
     ActivityComponent,
     AirplayComponent,
-    AlertComponent
+    AlertComponent,
+    AlignComponent,
+    AnchorComponent,
+    ArrowComponent,
+    AtSignComponent
   ]
 })
 export class GariconsModule { }

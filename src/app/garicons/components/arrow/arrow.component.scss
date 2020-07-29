@@ -1,40 +1,18 @@
 .ani-hover {
     &:hover {
-        #first-chevron {
-            -webkit-animation-name: chervon-move;
-                    animation-name: chervon-move;
-            -webkit-animation-delay: .2s;
-                    animation-delay: .2s;
-        }
+        #arrow {
+            -webkit-animation-name: arrow-ani;
+                    animation-name: arrow-ani;
 
-        #second-chevron {
-            -webkit-animation-name: chervon-move;
-                    animation-name: chervon-move;
-            -webkit-animation-delay: .25s;
-                    animation-delay: .25s;
         }
-
     }
 }
 
-
 .ani-onload {
-
-    #first-chevron {
-        -webkit-animation-name: chervon-move;
-                animation-name: chervon-move;
-        -webkit-animation-delay: .2s;
-                animation-delay: .2s;
+    #arrow {
+        -webkit-animation-name: arrow-ani;
+                animation-name: arrow-ani;
     }
-
-    #second-chevron {
-        -webkit-animation-name: chervon-move;
-                animation-name: chervon-move;
-        -webkit-animation-delay: .25s;
-                animation-delay: .25s;
-    }
-
-
 }
 
 .dir-right {
@@ -61,9 +39,31 @@
             transform: rotate(90deg);
 }
 
+.dir-up-left {
+    -webkit-transform: rotate(315deg);
+        -ms-transform: rotate(315deg);
+            transform: rotate(315deg);
+}
 
-#first-chevron,
-#second-chevron {
+.dir-up-right {
+    -webkit-transform: rotate(225deg);
+        -ms-transform: rotate(225deg);
+            transform: rotate(225deg);
+}
+.dir-down-left {
+    -webkit-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+            transform: rotate(135deg);
+}
+
+.dir-down-right {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+#arrow {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
     -webkit-animation-duration: .5s;
             animation-duration: .5s;
     -webkit-animation-iteration-count: 2;
@@ -78,7 +78,7 @@
             animation-play-state: running;
 }
 
-@-webkit-keyframes chervon-move {
+@-webkit-keyframes arrow-ani {
     0% {
         -webkit-transform: translateX(0%);
                 transform: translateX(0%);
@@ -106,7 +106,7 @@
     }
 }
 
-@keyframes chervon-move {
+@keyframes arrow-ani {
     0% {
         -webkit-transform: translateX(0%);
                 transform: translateX(0%);
