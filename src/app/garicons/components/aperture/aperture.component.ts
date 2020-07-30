@@ -6,11 +6,4 @@ import { BaseComponent } from '../base/base.component';
   templateUrl: './aperture.component.html',
   styleUrls: ['./aperture.component.scss']
 })
-export class ApertureComponent extends BaseComponent {
-
-  // constructor() { }
-
-  // ngOnInit() {
-  // }
-
-}
+export class ApertureComponent extends BaseComponent {}
