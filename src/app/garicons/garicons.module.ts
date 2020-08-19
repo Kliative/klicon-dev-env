@@ -29,6 +29,7 @@ import { ApertureComponent } from './components/aperture/aperture.component';
 import { ArchiveComponent } from './components/archive/archive.component';
 import { AwardComponent } from './components/award/award.component';
 import { BarChartComponent } from './components/bar-chart/bar-chart.component';
+import { BatteryComponent } from './components/battery/battery.component';
 
 @NgModule({
   imports: [
@@ -63,7 +64,8 @@ import { BarChartComponent } from './components/bar-chart/bar-chart.component';
     ApertureComponent,
     ArchiveComponent,
     AwardComponent,
-    BarChartComponent
+    BarChartComponent,
+    BatteryComponent
   ],
   exports: [
     GariconsComponent,
@@ -93,7 +95,8 @@ import { BarChartComponent } from './components/bar-chart/bar-chart.component';
     ApertureComponent,
     ArchiveComponent,
     AwardComponent,
-    BarChartComponent
+    BarChartComponent,
+    BatteryComponent
   ]
 })
 export class GariconsModule { }
