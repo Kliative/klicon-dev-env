@@ -27,6 +27,7 @@ import { ArrowComponent } from './components/arrow/arrow.component';
 import { AtSignComponent } from './components/at-sign/at-sign.component';
 import { ApertureComponent } from './components/aperture/aperture.component';
 import { ArchiveComponent } from './components/archive/archive.component';
+import { AwardComponent } from './components/award/award.component';
 
 @NgModule({
   imports: [
@@ -59,7 +60,8 @@ import { ArchiveComponent } from './components/archive/archive.component';
     ArrowComponent,
     AtSignComponent,
     ApertureComponent,
-    ArchiveComponent
+    ArchiveComponent,
+    AwardComponent
   ],
   exports: [
     GariconsComponent,
@@ -87,7 +89,8 @@ import { ArchiveComponent } from './components/archive/archive.component';
     ArrowComponent,
     AtSignComponent,
     ApertureComponent,
-    ArchiveComponent
+    ArchiveComponent,
+    AwardComponent
   ]
 })
 export class GariconsModule { }
