@@ -3,7 +3,18 @@
     <h1>NEW</h1>
     <hr>
     <div class="row" style="color: blue;">
+        <div class="col">
+            <gcon-bell [isDisabled]="true" [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'">
+            </gcon-bell>
+        </div>
 
+
+    </div>
+
+
+    <h1 class="pt-5">NEW-ish</h1>
+    <hr>
+    <div class="row pt-5">
         <div class="col">
             <gcon-award [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'">
             </gcon-award>
@@ -16,13 +27,8 @@
             <gcon-battery [isCharging]="false" [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'">
             </gcon-battery>
         </div>
-
     </div>
-
-
-    <h1 class="pt-5">NEW-ish</h1>
-    <hr>
-    <div class="row">
+    <div class="row pt-5">
         <div class="col">
             <gcon-arrow [isCircle]="true" [arrowDirection]="'down-left'" [dimension]="30" [strokeWidth]="2"
                 [animationAction]="'hover'"></gcon-arrow>

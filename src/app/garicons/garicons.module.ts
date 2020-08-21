@@ -30,6 +30,7 @@ import { ArchiveComponent } from './components/archive/archive.component';
 import { AwardComponent } from './components/award/award.component';
 import { BarChartComponent } from './components/bar-chart/bar-chart.component';
 import { BatteryComponent } from './components/battery/battery.component';
+import { BellComponent } from './components/bell/bell.component';
 
 @NgModule({
   imports: [
@@ -65,7 +66,8 @@ import { BatteryComponent } from './components/battery/battery.component';
     ArchiveComponent,
     AwardComponent,
     BarChartComponent,
-    BatteryComponent
+    BatteryComponent,
+    BellComponent
   ],
   exports: [
     GariconsComponent,
@@ -96,7 +98,8 @@ import { BatteryComponent } from './components/battery/battery.component';
     ArchiveComponent,
     AwardComponent,
     BarChartComponent,
-    BatteryComponent
+    BatteryComponent,
+    BellComponent
   ]
 })
 export class GariconsModule { }
