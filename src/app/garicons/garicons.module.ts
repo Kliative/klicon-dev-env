@@ -31,6 +31,7 @@ import { AwardComponent } from './components/award/award.component';
 import { BarChartComponent } from './components/bar-chart/bar-chart.component';
 import { BatteryComponent } from './components/battery/battery.component';
 import { BellComponent } from './components/bell/bell.component';
+import { BluetoothComponent } from './components/bluetooth/bluetooth.component';
 
 @NgModule({
   imports: [
@@ -67,7 +68,8 @@ import { BellComponent } from './components/bell/bell.component';
     AwardComponent,
     BarChartComponent,
     BatteryComponent,
-    BellComponent
+    BellComponent,
+    BluetoothComponent
   ],
   exports: [
     GariconsComponent,
@@ -99,7 +101,8 @@ import { BellComponent } from './components/bell/bell.component';
     AwardComponent,
     BarChartComponent,
     BatteryComponent,
-    BellComponent
+    BellComponent,
+    BluetoothComponent
   ]
 })
 export class GariconsModule { }
