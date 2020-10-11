@@ -34,6 +34,7 @@ import { BellComponent } from './components/bell/bell.component';
 import { BluetoothComponent } from './components/bluetooth/bluetooth.component';
 import { BoldComponent } from './components/bold/bold.component';
 import { BookComponent } from './components/book/book.component';
+import { BookmarkComponent } from './components/bookmark/bookmark.component';
 
 @NgModule({
   imports: [
@@ -73,7 +74,8 @@ import { BookComponent } from './components/book/book.component';
     BellComponent,
     BluetoothComponent,
     BoldComponent,
-    BookComponent
+    BookComponent,
+    BookmarkComponent
   ],
   exports: [
     GariconsComponent,
@@ -108,7 +110,8 @@ import { BookComponent } from './components/book/book.component';
     BellComponent,
     BluetoothComponent,
     BoldComponent,
-    BookComponent
+    BookComponent,
+    BookmarkComponent
   ]
 })
 export class GariconsModule { }
