@@ -38,6 +38,7 @@ import { BookmarkComponent } from './components/bookmark/bookmark.component';
 import { BoxComponent } from './components/box/box.component';
 import { BriefcaseComponent } from './components/briefcase/briefcase.component';
 import { CalendarComponent } from './components/calendar/calendar.component';
+import { CameraComponent } from './components/camera/camera.component';
 
 @NgModule({
   imports: [
@@ -81,7 +82,8 @@ import { CalendarComponent } from './components/calendar/calendar.component';
     BookmarkComponent,
     BoxComponent,
     BriefcaseComponent,
-    CalendarComponent
+    CalendarComponent,
+    CameraComponent
   ],
   exports: [
     GariconsComponent,
@@ -120,7 +122,8 @@ import { CalendarComponent } from './components/calendar/calendar.component';
     BookmarkComponent,
     BoxComponent,
     BriefcaseComponent,
-    CalendarComponent
+    CalendarComponent,
+    CameraComponent
   ]
 })
 export class GariconsModule { }
