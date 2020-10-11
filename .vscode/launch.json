@@ -7,9 +7,15 @@
         {
             "type": "pwa-chrome",
             "request": "launch",
-            "name": "Launch Chrome against localhost",
-            "url": "http://localhost:8080",
+            "name": "Chrome",
+            "url": "http://localhost:4200",
             "webRoot": "${workspaceFolder}"
+        },
+        {
+            "command": "ng serve",
+            "name": "LaunchApp",
+            "request": "launch",
+            "type": "node-terminal"
         }
     ]
 }

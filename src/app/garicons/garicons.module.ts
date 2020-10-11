@@ -33,6 +33,12 @@ import { BatteryComponent } from './components/battery/battery.component';
 import { BellComponent } from './components/bell/bell.component';
 import { BluetoothComponent } from './components/bluetooth/bluetooth.component';
 import { BoldComponent } from './components/bold/bold.component';
+import { BookComponent } from './components/book/book.component';
+import { BookmarkComponent } from './components/bookmark/bookmark.component';
+import { BoxComponent } from './components/box/box.component';
+import { BriefcaseComponent } from './components/briefcase/briefcase.component';
+import { CalendarComponent } from './components/calendar/calendar.component';
+import { CameraComponent } from './components/camera/camera.component';
 
 @NgModule({
   imports: [
@@ -71,7 +77,13 @@ import { BoldComponent } from './components/bold/bold.component';
     BatteryComponent,
     BellComponent,
     BluetoothComponent,
-    BoldComponent
+    BoldComponent,
+    BookComponent,
+    BookmarkComponent,
+    BoxComponent,
+    BriefcaseComponent,
+    CalendarComponent,
+    CameraComponent
   ],
   exports: [
     GariconsComponent,
@@ -105,7 +117,13 @@ import { BoldComponent } from './components/bold/bold.component';
     BatteryComponent,
     BellComponent,
     BluetoothComponent,
-    BoldComponent
+    BoldComponent,
+    BookComponent,
+    BookmarkComponent,
+    BoxComponent,
+    BriefcaseComponent,
+    CalendarComponent,
+    CameraComponent
   ]
 })
 export class GariconsModule { }
