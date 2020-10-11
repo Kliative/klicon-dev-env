@@ -35,6 +35,7 @@ import { BluetoothComponent } from './components/bluetooth/bluetooth.component';
 import { BoldComponent } from './components/bold/bold.component';
 import { BookComponent } from './components/book/book.component';
 import { BookmarkComponent } from './components/bookmark/bookmark.component';
+import { BoxComponent } from './components/box/box.component';
 
 @NgModule({
   imports: [
@@ -75,7 +76,8 @@ import { BookmarkComponent } from './components/bookmark/bookmark.component';
     BluetoothComponent,
     BoldComponent,
     BookComponent,
-    BookmarkComponent
+    BookmarkComponent,
+    BoxComponent
   ],
   exports: [
     GariconsComponent,
@@ -111,7 +113,8 @@ import { BookmarkComponent } from './components/bookmark/bookmark.component';
     BluetoothComponent,
     BoldComponent,
     BookComponent,
-    BookmarkComponent
+    BookmarkComponent,
+    BoxComponent
   ]
 })
 export class GariconsModule { }
