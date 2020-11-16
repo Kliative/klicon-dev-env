@@ -40,6 +40,7 @@ import { BriefcaseComponent } from './components/briefcase/briefcase.component';
 import { CalendarComponent } from './components/calendar/calendar.component';
 import { CameraComponent } from './components/camera/camera.component';
 import { CastComponent } from './components/cast/cast.component';
+import { CheckComponent } from './components/check/check.component';
 
 @NgModule({
   imports: [
@@ -85,7 +86,8 @@ import { CastComponent } from './components/cast/cast.component';
     BriefcaseComponent,
     CalendarComponent,
     CameraComponent,
-    CastComponent
+    CastComponent,
+    CheckComponent
   ],
   exports: [
     GariconsComponent,
@@ -126,7 +128,8 @@ import { CastComponent } from './components/cast/cast.component';
     BriefcaseComponent,
     CalendarComponent,
     CameraComponent,
-    CastComponent
+    CastComponent,
+    CheckComponent
   ]
 })
 export class GariconsModule { }
