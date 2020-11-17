@@ -41,6 +41,7 @@ import { CalendarComponent } from './components/calendar/calendar.component';
 import { CameraComponent } from './components/camera/camera.component';
 import { CastComponent } from './components/cast/cast.component';
 import { CheckComponent } from './components/check/check.component';
+import { ChromeComponent } from './components/chrome/chrome.component';
 
 @NgModule({
   imports: [
@@ -87,7 +88,8 @@ import { CheckComponent } from './components/check/check.component';
     CalendarComponent,
     CameraComponent,
     CastComponent,
-    CheckComponent
+    CheckComponent,
+    ChromeComponent
   ],
   exports: [
     GariconsComponent,
@@ -129,7 +131,8 @@ import { CheckComponent } from './components/check/check.component';
     CalendarComponent,
     CameraComponent,
     CastComponent,
-    CheckComponent
+    CheckComponent,
+    ChromeComponent
   ]
 })
 export class GariconsModule { }
