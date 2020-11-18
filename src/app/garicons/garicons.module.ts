@@ -43,6 +43,7 @@ import { CastComponent } from './components/cast/cast.component';
 import { CheckComponent } from './components/check/check.component';
 import { ChromeComponent } from './components/chrome/chrome.component';
 import { CircleComponent } from './components/circle/circle.component';
+import { ClipboardComponent } from './components/clipboard/clipboard.component';
 
 @NgModule({
   imports: [
@@ -91,7 +92,8 @@ import { CircleComponent } from './components/circle/circle.component';
     CastComponent,
     CheckComponent,
     ChromeComponent,
-    CircleComponent
+    CircleComponent,
+    ClipboardComponent
   ],
   exports: [
     GariconsComponent,
@@ -135,7 +137,8 @@ import { CircleComponent } from './components/circle/circle.component';
     CastComponent,
     CheckComponent,
     ChromeComponent,
-    CircleComponent
+    CircleComponent,
+    ClipboardComponent
   ]
 })
 export class GariconsModule { }
