@@ -21,12 +21,29 @@
 }
 
 .ani-onload {
+  #chrome-inner-circle {
+    -webkit-animation-name: chrome-circle-ani;
+    animation-name: chrome-circle-ani;
+  }
 
+  #chrome-outer-circle {
+    -webkit-animation-name: chrome-outer-circle-ani;
+    animation-name: chrome-outer-circle-ani;
+  }
+
+  #chrome-line-right,
+  #chrome-line-left,
+  #chrome-line-bottom {
+    -webkit-animation-name: chrome-line-ani;
+    animation-name: chrome-line-ani;
+  }
 }
+
 #chrome-outer-circle {
   stroke-dasharray: 100;
   stroke-dashoffset: 0;
 }
+
 #chrome-line-right,
 #chrome-line-left,
 #chrome-line-bottom {
@@ -56,9 +73,10 @@
   animation-duration: 1s;
 
 }
+
 @-webkit-keyframes chrome-outer-circle-ani {
 
-  0%{
+  0% {
     stroke-dashoffset: 100;
   }
 
@@ -66,8 +84,9 @@
 
     stroke-dashoffset: 100;
   }
+
   100% {
-   
+
     stroke-dashoffset: 0;
   }
 
@@ -79,6 +98,7 @@
     opacity: 0;
     stroke-dashoffset: -9;
   }
+
   27% {
     opacity: 1;
     stroke-dashoffset: -9;
