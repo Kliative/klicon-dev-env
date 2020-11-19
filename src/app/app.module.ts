@@ -15,7 +15,7 @@ import { FeatherWeatherIconsComponent } from './components/pre-gcon/feather-icon
 import { EditComponent } from './components/pre-gcon/material-icons/edit/edit.component';
 import { ThumbsUpComponent } from './components/pre-gcon/material-icons/thumbs-up/thumbs-up.component';
 import { AnimatThumbsUpComponent } from './components/pre-gcon/material-icons/animat-thumbs-up/animat-thumbs-up.component';
-import { ClockComponent } from './components/pre-gcon/material-icons/clock/clock.component';
+import { ClockMatComponent } from './components/pre-gcon/material-icons/clock/clock.component';
 import { AnimatWrenchComponent } from './components/pre-gcon/material-icons/animat-wrench/animat-wrench.component';
 import { AnimatBellComponent } from './components/pre-gcon/material-icons/animat-bell/animat-bell.component';
 import { AnimatShoppingCartComponent } from './components/pre-gcon/material-icons/animat-shopping-cart/animat-shopping-cart.component';
@@ -58,7 +58,7 @@ import { GariconsModule } from './garicons/garicons.module';
     EditComponent,
     ThumbsUpComponent,
     AnimatThumbsUpComponent,
-    ClockComponent,
+    ClockMatComponent,
     AnimatWrenchComponent,
     AnimatBellComponent,
     AnimatShoppingCartComponent,
