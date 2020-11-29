@@ -1,8 +1,9 @@
 .ani-hover {
   &:hover {
+
     #cloud-off,
     #cloud-off-line {
-      animation-name: cloud-shake-ani;
+      animation-name: cloud-off-line-ani;
     }
 
     #cloud {
@@ -27,8 +28,16 @@
   }
 }
 
-#cloud-off-full
-#cloud-off-line,
+#cloud-off-line {
+  stroke-dasharray: 40;
+  stroke-dashoffset: 0;
+}
+#cloud-off-trans {
+  opacity: .3;
+}
+
+
+#cloud-off-full #cloud-off-line,
 #cloud-off,
 #cloud {
   transform-origin: center center;
@@ -59,17 +68,18 @@
   }
 
   100% {
-      transform: scale(1);
+    transform: scale(1);
   }
 }
 
-@keyframes clock-hour-hand-ani {
-  from {
-    transform: rotate(0turn);
+@keyframes cloud-off-line-ani {
+  0% {
+    stroke-dashoffset: 40;
   }
 
-  to {
-    transform: rotate(1turn);
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 0;
   }
 
 }
