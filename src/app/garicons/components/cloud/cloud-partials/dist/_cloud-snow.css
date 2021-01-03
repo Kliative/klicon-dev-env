@@ -1,5 +1,5 @@
-.ani-hover #cloud-snow-backdrop:hover {
-  opacity: 0;
+.ani-hover #snow-rain-cloud:hover #cloud-snow-backdrop {
+  display: none;
 }
 
 .ani-onload #cloud-snow-backdrop {
@@ -19,8 +19,8 @@
   animation-play-state: running;
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
-  -webkit-animation-duration: 0.1s;
-  animation-duration: 0.1s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
 }
 
 @keyframes snow-bg-hide {
