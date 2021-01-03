@@ -1,15 +1,9 @@
-.ani-hover {
-  #cloud-snow-backdrop {
-    &:hover {
-      opacity: 0;
-    }
-  }
+.ani-hover #cloud-snow-backdrop:hover {
+  opacity: 0;
 }
 
-.ani-onload {
-  #cloud-snow-backdrop {
-    animation-name: snow-bg-hide;
-  }
+.ani-onload #cloud-snow-backdrop {
+  animation-name: snow-bg-hide;
 }
 
 #cloud-snow-backdrop {
@@ -25,16 +19,14 @@
   animation-play-state: running;
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
-  -webkit-animation-duration: .1s;
-  animation-duration: .1s;
-
+  -webkit-animation-duration: 0.1s;
+  animation-duration: 0.1s;
 }
 
 @keyframes snow-bg-hide {
   from {
     opacity: 1;
   }
-
   to {
     opacity: 0;
   }
