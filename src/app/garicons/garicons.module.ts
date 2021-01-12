@@ -46,6 +46,7 @@ import { CircleComponent } from './components/circle/circle.component';
 import { ClipboardComponent } from './components/clipboard/clipboard.component';
 import { ClockComponent } from './components/clock/clock.component';
 import { CloudComponent } from './components/cloud/cloud.component';
+import { CodeComponent } from './components/code/code.component';
 
 
 @NgModule({
@@ -98,7 +99,8 @@ import { CloudComponent } from './components/cloud/cloud.component';
     CircleComponent,
     ClipboardComponent,
     ClockComponent,
-    CloudComponent
+    CloudComponent, 
+    CodeComponent
   ],
   exports: [
     GariconsComponent,
@@ -145,7 +147,8 @@ import { CloudComponent } from './components/cloud/cloud.component';
     CircleComponent,
     ClipboardComponent,
     ClockComponent,
-    CloudComponent
+    CloudComponent, 
+    CodeComponent
   ]
 })
 export class GariconsModule { }

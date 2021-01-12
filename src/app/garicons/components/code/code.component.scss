@@ -1,29 +1,29 @@
 .ani-hover {
   &:hover {
-    #clock-hour-hand {
-      animation-name: clock-hour-hand-ani;
+    #code-bracket-left {
+      animation-name: code-bracket-left-ani;
     }
 
-    #clock-minute-hand {
-      animation-name: clock-minute-hand-ani;
+    #code-bracket-right {
+      animation-name: code-bracket-right-ani;
     }
   }
 }
 
 .ani-onload {
 
-  #clock-hour-hand {
-    animation-name: clock-hour-hand-ani;
+  #code-bracket-left {
+    animation-name: code-bracket-left-ani;
   }
 
-  #clock-minute-hand {
-    animation-name: clock-minute-hand-ani;
+  #code-bracket-right {
+    animation-name: code-bracket-right-ani;
   }
 
 }
 
-#clock-hour-hand,
-#clock-minute-hand {
+#code-bracket-left,
+#code-bracket-right {
   transform-origin: center center;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
@@ -42,24 +42,34 @@
 
 }
 
-@keyframes clock-minute-hand-ani {
-  from {
-    transform: rotate(0turn);
+@keyframes code-bracket-left-ani {
+  0% {
+    transform: translateX(0%)
   }
 
-  to {
-    transform: rotate(4turn);
+  20% {
+    transform: translateX(11%)
   }
+
+  100% {
+    transform: translateX(0%)
+  }
+
+
 
 }
 
-@keyframes clock-hour-hand-ani {
-  from {
-    transform: rotate(0turn);
+@keyframes code-bracket-right-ani {
+  0% {
+    transform: translateX(0%)
   }
 
-  to {
-    transform: rotate(1turn);
+  20% {
+    transform: translateX(-11%)
+  }
+
+  100% {
+    transform: translateX(0%)
   }
 
 }
