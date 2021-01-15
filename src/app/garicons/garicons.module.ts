@@ -47,6 +47,8 @@ import { ClipboardComponent } from './components/clipboard/clipboard.component';
 import { ClockComponent } from './components/clock/clock.component';
 import { CloudComponent } from './components/cloud/cloud.component';
 import { CodeComponent } from './components/code/code.component';
+import { CodepenComponent } from './components/codepen/codepen.component';
+import { CodesandboxComponent } from './components/codesandbox/codesandbox.component';
 
 
 @NgModule({
@@ -100,7 +102,9 @@ import { CodeComponent } from './components/code/code.component';
     ClipboardComponent,
     ClockComponent,
     CloudComponent, 
-    CodeComponent
+    CodeComponent,
+    CodepenComponent,
+    CodesandboxComponent
   ],
   exports: [
     GariconsComponent,
@@ -148,7 +152,9 @@ import { CodeComponent } from './components/code/code.component';
     ClipboardComponent,
     ClockComponent,
     CloudComponent, 
-    CodeComponent
+    CodeComponent,
+    CodepenComponent,
+    CodesandboxComponent
   ]
 })
 export class GariconsModule { }
