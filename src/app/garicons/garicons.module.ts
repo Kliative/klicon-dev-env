@@ -53,6 +53,7 @@ import { CoffeeComponent } from './components/coffee/coffee.component';
 import { ColumnsComponent } from './components/columns/columns.component';
 import { CommandComponent } from './components/command/command.component';
 import { CompassComponent } from './components/compass/compass.component';
+import { CopyComponent } from './components/copy/copy.component';
 
 
 @NgModule({
@@ -112,7 +113,8 @@ import { CompassComponent } from './components/compass/compass.component';
     CoffeeComponent,
     ColumnsComponent,
     CommandComponent,
-    CompassComponent
+    CompassComponent,
+    CopyComponent
   ],
   exports: [
     GariconsComponent,
@@ -166,7 +168,8 @@ import { CompassComponent } from './components/compass/compass.component';
     CoffeeComponent,
     ColumnsComponent,
     CommandComponent,
-    CompassComponent
+    CompassComponent,
+    CopyComponent
   ]
 })
 export class GariconsModule { }
