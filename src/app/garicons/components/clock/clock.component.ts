@@ -6,4 +6,4 @@ import { BaseComponent } from '../base/base.component';
   templateUrl: './clock.component.html',
   styleUrls: ['./clock.component.scss']
 })
-export class ClockComponent extends BaseComponent {}
+export class ClockComponent extends BaseComponent { }

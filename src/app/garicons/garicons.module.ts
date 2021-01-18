@@ -46,6 +46,14 @@ import { CircleComponent } from './components/circle/circle.component';
 import { ClipboardComponent } from './components/clipboard/clipboard.component';
 import { ClockComponent } from './components/clock/clock.component';
 import { CloudComponent } from './components/cloud/cloud.component';
+import { CodeComponent } from './components/code/code.component';
+import { CodepenComponent } from './components/codepen/codepen.component';
+import { CodesandboxComponent } from './components/codesandbox/codesandbox.component';
+import { CoffeeComponent } from './components/coffee/coffee.component';
+import { ColumnsComponent } from './components/columns/columns.component';
+import { CommandComponent } from './components/command/command.component';
+import { CompassComponent } from './components/compass/compass.component';
+import { CopyComponent } from './components/copy/copy.component';
 
 
 @NgModule({
@@ -98,7 +106,15 @@ import { CloudComponent } from './components/cloud/cloud.component';
     CircleComponent,
     ClipboardComponent,
     ClockComponent,
-    CloudComponent
+    CloudComponent, 
+    CodeComponent,
+    CodepenComponent,
+    CodesandboxComponent,
+    CoffeeComponent,
+    ColumnsComponent,
+    CommandComponent,
+    CompassComponent,
+    CopyComponent
   ],
   exports: [
     GariconsComponent,
@@ -145,7 +161,15 @@ import { CloudComponent } from './components/cloud/cloud.component';
     CircleComponent,
     ClipboardComponent,
     ClockComponent,
-    CloudComponent
+    CloudComponent, 
+    CodeComponent,
+    CodepenComponent,
+    CodesandboxComponent,
+    CoffeeComponent,
+    ColumnsComponent,
+    CommandComponent,
+    CompassComponent,
+    CopyComponent
   ]
 })
 export class GariconsModule { }
