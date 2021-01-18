@@ -49,6 +49,7 @@ import { CloudComponent } from './components/cloud/cloud.component';
 import { CodeComponent } from './components/code/code.component';
 import { CodepenComponent } from './components/codepen/codepen.component';
 import { CodesandboxComponent } from './components/codesandbox/codesandbox.component';
+import { CoffeeComponent } from './components/coffee/coffee.component';
 
 
 @NgModule({
@@ -104,7 +105,8 @@ import { CodesandboxComponent } from './components/codesandbox/codesandbox.compo
     CloudComponent, 
     CodeComponent,
     CodepenComponent,
-    CodesandboxComponent
+    CodesandboxComponent,
+    CoffeeComponent
   ],
   exports: [
     GariconsComponent,
@@ -154,7 +156,8 @@ import { CodesandboxComponent } from './components/codesandbox/codesandbox.compo
     CloudComponent, 
     CodeComponent,
     CodepenComponent,
-    CodesandboxComponent
+    CodesandboxComponent,
+    CoffeeComponent
   ]
 })
 export class GariconsModule { }
