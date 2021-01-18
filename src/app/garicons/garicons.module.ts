@@ -51,6 +51,7 @@ import { CodepenComponent } from './components/codepen/codepen.component';
 import { CodesandboxComponent } from './components/codesandbox/codesandbox.component';
 import { CoffeeComponent } from './components/coffee/coffee.component';
 import { ColumnsComponent } from './components/columns/columns.component';
+import { CommandComponent } from './components/command/command.component';
 
 
 @NgModule({
@@ -108,7 +109,8 @@ import { ColumnsComponent } from './components/columns/columns.component';
     CodepenComponent,
     CodesandboxComponent,
     CoffeeComponent,
-    ColumnsComponent
+    ColumnsComponent,
+    CommandComponent
   ],
   exports: [
     GariconsComponent,
@@ -160,7 +162,8 @@ import { ColumnsComponent } from './components/columns/columns.component';
     CodepenComponent,
     CodesandboxComponent,
     CoffeeComponent,
-    ColumnsComponent
+    ColumnsComponent,
+    CommandComponent
   ]
 })
 export class GariconsModule { }
