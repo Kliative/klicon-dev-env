@@ -55,6 +55,7 @@ import { CommandComponent } from './components/command/command.component';
 import { CompassComponent } from './components/compass/compass.component';
 import { CopyComponent } from './components/copy/copy.component';
 import { CpuComponent } from './components/cpu/cpu.component';
+import { CreditCardComponent } from './components/credit-card/credit-card.component';
 
 
 @NgModule({
@@ -116,7 +117,8 @@ import { CpuComponent } from './components/cpu/cpu.component';
     CommandComponent,
     CompassComponent,
     CopyComponent,
-    CpuComponent
+    CpuComponent,
+    CreditCardComponent
   ],
   exports: [
     GariconsComponent,
@@ -172,7 +174,8 @@ import { CpuComponent } from './components/cpu/cpu.component';
     CommandComponent,
     CompassComponent,
     CopyComponent,
-    CpuComponent
+    CpuComponent,
+    CreditCardComponent
   ]
 })
 export class GariconsModule { }
