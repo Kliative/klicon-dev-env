@@ -54,6 +54,7 @@ import { ColumnsComponent } from './components/columns/columns.component';
 import { CommandComponent } from './components/command/command.component';
 import { CompassComponent } from './components/compass/compass.component';
 import { CopyComponent } from './components/copy/copy.component';
+import { CpuComponent } from './components/cpu/cpu.component';
 
 
 @NgModule({
@@ -114,7 +115,8 @@ import { CopyComponent } from './components/copy/copy.component';
     ColumnsComponent,
     CommandComponent,
     CompassComponent,
-    CopyComponent
+    CopyComponent,
+    CpuComponent
   ],
   exports: [
     GariconsComponent,
@@ -169,7 +171,8 @@ import { CopyComponent } from './components/copy/copy.component';
     ColumnsComponent,
     CommandComponent,
     CompassComponent,
-    CopyComponent
+    CopyComponent,
+    CpuComponent
   ]
 })
 export class GariconsModule { }
