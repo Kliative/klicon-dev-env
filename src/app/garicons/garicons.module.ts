@@ -1,6 +1,4 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GariconsComponent } from './garicons.component';
 import { RainComponent } from './components/rain/rain.component';
 import { HeavyRainComponent } from './components/heavy-rain/heavy-rain.component';
@@ -58,6 +56,7 @@ import { CpuComponent } from './components/cpu/cpu.component';
 import { CreditCardComponent } from './components/credit-card/credit-card.component';
 import { CropComponent } from './components/crop/crop.component';
 import { CrosshairComponent } from './components/crosshair/crosshair.component';
+import { DatabaseComponent } from './components/database/database.component';
 
 let gariconComponents = [
   GariconsComponent,
@@ -116,7 +115,8 @@ let gariconComponents = [
   CpuComponent,
   CreditCardComponent,
   CropComponent,
-  CrosshairComponent
+  CrosshairComponent,
+  DatabaseComponent
 ]
 @NgModule({
   imports: [
