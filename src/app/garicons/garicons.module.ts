@@ -58,6 +58,7 @@ import { CropComponent } from './components/crop/crop.component';
 import { CrosshairComponent } from './components/crosshair/crosshair.component';
 import { DatabaseComponent } from './components/database/database.component';
 import { DeleteComponent } from './components/delete/delete.component';
+import { DiscComponent } from './components/disc/disc.component';
 
 let gariconComponents = [
   GariconsComponent,
@@ -118,7 +119,8 @@ let gariconComponents = [
   CropComponent,
   CrosshairComponent,
   DatabaseComponent,
-  DeleteComponent
+  DeleteComponent,
+  DiscComponent
 ]
 @NgModule({
   imports: [
