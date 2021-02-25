@@ -57,6 +57,7 @@ import { CreditCardComponent } from './components/credit-card/credit-card.compon
 import { CropComponent } from './components/crop/crop.component';
 import { CrosshairComponent } from './components/crosshair/crosshair.component';
 import { DatabaseComponent } from './components/database/database.component';
+import { DeleteComponent } from './components/delete/delete.component';
 
 let gariconComponents = [
   GariconsComponent,
@@ -116,7 +117,8 @@ let gariconComponents = [
   CreditCardComponent,
   CropComponent,
   CrosshairComponent,
-  DatabaseComponent
+  DatabaseComponent,
+  DeleteComponent
 ]
 @NgModule({
   imports: [
