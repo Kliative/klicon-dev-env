@@ -60,6 +60,7 @@ import { DatabaseComponent } from './components/database/database.component';
 import { DeleteComponent } from './components/delete/delete.component';
 import { DiscComponent } from './components/disc/disc.component';
 import { DivideComponent } from './components/divide/divide.component';
+import { DollarSignComponent } from './components/dollar-sign/dollar-sign.component';
 
 let gariconComponents = [
   GariconsComponent,
@@ -122,7 +123,8 @@ let gariconComponents = [
   DatabaseComponent,
   DeleteComponent,
   DiscComponent,
-  DivideComponent
+  DivideComponent,
+  DollarSignComponent
 ]
 @NgModule({
   imports: [
