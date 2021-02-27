@@ -63,6 +63,8 @@ import { DivideComponent } from './components/divide/divide.component';
 import { DollarSignComponent } from './components/dollar-sign/dollar-sign.component';
 import { DownloadComponent } from './components/download/download.component';
 import { DownloadCloudComponent } from './components/download-cloud/download-cloud.component';
+import { DribbleComponent } from './components/dribble/dribble.component';
+import { DropletComponent } from './components/droplet/droplet.component';
 
 let gariconComponents = [
   GariconsComponent,
@@ -129,6 +131,8 @@ let gariconComponents = [
   DollarSignComponent,
   DownloadComponent,
   DownloadCloudComponent,
+  DribbleComponent,
+  DropletComponent
 ]
 @NgModule({
   imports: [

@@ -1,20 +1,20 @@
 .ani-hover {
     &:hover {
         #dollar-line {
-            animation-name: dollar-line;
+            animation-name: dollar-line-ani;
         }
         #dollar-symbol {
-            animation-name: dollar-symbol;
+            animation-name: dollar-symbol-ani;
         }
     }
 }
 
 .ani-onload {
     #dollar-line {
-        animation-name: dollar-line;
+        animation-name: dollar-line-ani;
     }
     #dollar-symbol {
-        animation-name: dollar-symbol;
+        animation-name: dollar-symbol-ani;
     }
 }
 
@@ -43,7 +43,7 @@
     animation-duration: 1s;
 }
 
-@keyframes dollar-line {
+@keyframes dollar-line-ani {
     0% {
         stroke-dashoffset: 100;
     }
@@ -57,7 +57,7 @@
     }
 }
 
-@keyframes dollar-symbol {
+@keyframes dollar-symbol-ani {
     0% {
         stroke-dashoffset: 100;
     }
