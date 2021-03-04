@@ -57,6 +57,14 @@ import { CreditCardComponent } from './components/credit-card/credit-card.compon
 import { CropComponent } from './components/crop/crop.component';
 import { CrosshairComponent } from './components/crosshair/crosshair.component';
 import { DatabaseComponent } from './components/database/database.component';
+import { DeleteComponent } from './components/delete/delete.component';
+import { DiscComponent } from './components/disc/disc.component';
+import { DivideComponent } from './components/divide/divide.component';
+import { DollarSignComponent } from './components/dollar-sign/dollar-sign.component';
+import { DownloadComponent } from './components/download/download.component';
+import { DownloadCloudComponent } from './components/download-cloud/download-cloud.component';
+import { DribbleComponent } from './components/dribble/dribble.component';
+import { DropletComponent } from './components/droplet/droplet.component';
 
 let gariconComponents = [
   GariconsComponent,
@@ -116,7 +124,15 @@ let gariconComponents = [
   CreditCardComponent,
   CropComponent,
   CrosshairComponent,
-  DatabaseComponent
+  DatabaseComponent,
+  DeleteComponent,
+  DiscComponent,
+  DivideComponent,
+  DollarSignComponent,
+  DownloadComponent,
+  DownloadCloudComponent,
+  DribbleComponent,
+  DropletComponent
 ]
 @NgModule({
   imports: [
