@@ -65,6 +65,7 @@ import { DownloadComponent } from './components/download/download.component';
 import { DownloadCloudComponent } from './components/download-cloud/download-cloud.component';
 import { DribbleComponent } from './components/dribble/dribble.component';
 import { DropletComponent } from './components/droplet/droplet.component';
+import { EditComponent } from './components/edit/edit.component';
 
 let gariconComponents = [
   GariconsComponent,
@@ -132,7 +133,8 @@ let gariconComponents = [
   DownloadComponent,
   DownloadCloudComponent,
   DribbleComponent,
-  DropletComponent
+  DropletComponent,
+  EditComponent
 ]
 @NgModule({
   imports: [
