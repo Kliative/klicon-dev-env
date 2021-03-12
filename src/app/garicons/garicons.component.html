@@ -1,7 +1,25 @@
 <div class="container-fluid">
-    <h1>NEW: GCS6 </h1>
+    <h1>NEW: GCS8 </h1>
     <hr>
-    <div class="row" style="color: palevioletred;">
+    <div class="row">
+        <div class="col">
+            <gcon-edit [editType]="'box'" [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'"></gcon-edit>
+        </div>
+        <div class="col">
+            <gcon-external-link [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'">
+            </gcon-external-link>
+        </div>
+        <div class="col">
+            <gcon-eye [eyeOff]="true" [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'"></gcon-eye>
+        </div>
+        <div class="col">
+            <gcon-facebook [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'"></gcon-facebook>
+        </div>
+    </div>
+
+    <h1 class="pt-5">NEW-ish</h1>
+    <hr>
+    <div class="row">
         <div class="col">
             <gcon-dollar-sign [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'">
 
@@ -29,8 +47,6 @@
         </div>
     </div>
 
-    <h1 class="pt-5">NEW-ish</h1>
-    <hr>
     <div class="row">
         <div class="col">
             <gcon-delete [dimension]="30" [strokeWidth]="2" [animationAction]="'hover'">
